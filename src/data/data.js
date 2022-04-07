@@ -7,7 +7,7 @@ const footer = { //копоненты футера
 
 const data = {
   index: { //имя страницы
-    title: 'Название страницы',
+    title: 'Wowchatter',
   },
 }
 
