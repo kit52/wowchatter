@@ -1,0 +1,30 @@
+{% with {c:'chat-card'}%}
+<div class="{{c}}">
+    {{svg}}
+    <div class="{{c}}__content">
+        <div class="{{c}}__top">
+            <div class="{{c}}__chat">1 chat</div>
+            <div class="{{c}}__title">{{title}}</div>
+            <div class="{{c}}__text">
+                {{text}}
+            </div>
+        </div>
+        <div class="{{c}}__bottom">
+            <div class="{{c}}__price">{{price}}</div>
+            {% include '@root/includes/components/chat-btn.twig' with {
+            link:"#",
+            text:'Connect',
+            addClass:'white'
+
+            } %}
+            {% include '@root/includes/components/chat-btn.twig' with {
+            link:"#",
+            text:'Connect',
+            addClass:'black'
+            } %}
+        </div>
+
+    </div>
+
+</div>
+{% endwith %}

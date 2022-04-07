@@ -1,0 +1,57 @@
+.card-outline {
+    border: 1px solid rgba(48, 48, 48, 0.2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 16px;
+    min-height: 200px;
+    height: 100%;
+    cursor: default;
+    transition: fill 0.5s ease, color 0.5s ease, background 0.5s ease, border 0.5s ease;
+    @media (min-width: 992px) {
+        padding: 40px 24px 24px;
+        min-height: 364px;
+    }
+    svg {
+        margin-bottom: 16px;
+        fill: inherit;
+        max-width: 40px;
+        @media (min-width: 992px) {
+            max-width: 56px;
+        }
+    }
+    &__content {
+    }
+    &__title {
+        margin-bottom: 16px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        transition: color 0.5s ease;
+        @media (min-width: 992px) {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: var(--grey-op);
+        @media (min-width: 992px) {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+    fill: var(--grey);
+    &:hover {
+        transition: fill 0.5s ease, color 0.5s ease, background 0.5s ease, border 0.5s ease;
+        fill: var(--blue);
+        border: 1px solid var(--blue);
+        .card-outline__title {
+            color: var(--blue);
+            transition: color 0.5s ease;
+        }
+    }
+}

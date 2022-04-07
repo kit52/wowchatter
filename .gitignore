@@ -1,0 +1,12 @@
+/node_modules/
+/.idea/
+/.vscode/
+/src/assets/js/chunks/
+/src/assets/js/main.min.js
+/src/assets/js/vendors.js
+/src/assets/js/vendors.min.js
+/src/assets/js/vendors/
+/src/assets/css/
+/src/assets/img/
+/dist/
+jsconfig.json

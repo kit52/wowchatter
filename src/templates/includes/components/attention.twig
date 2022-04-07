@@ -1,0 +1,9 @@
+{% with {c:'attention'}%}
+<div class="{{c}}">
+    <h3>How does loyal community look</h3>
+    {% include '@root/includes/components/btn-play.twig' with {
+    text:'Play video',
+    link:'#'
+    } %}
+</div>
+{% endwith %}

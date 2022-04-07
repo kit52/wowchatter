@@ -1,0 +1,49 @@
+{% with {c:"header"} %}
+<header class="{{c}}">
+    <div class="{{c}}__logo">
+        <img src="../assets/img/logo.svg" alt="logo">
+    </div>
+    <div class="container">
+        <div class="{{c}}__wrapper-top">
+            <h1>Loyal community and activity in Telegram chats of your NFT, Blockchain, GameFi project</h1>
+            <div class="{{c}}__subtitle">A successful marketing tool for your Blockchain project’s progress and
+                promotion
+            </div>
+            <div class="{{c}}__icon-1 {{c}}__icon">
+                <img src="../assets/img/1.svg" alt="icon">
+            </div>
+            <div class="{{c}}__icon-2 {{c}}__icon">
+                <img src="../assets/img/2.svg" alt="icon">
+            </div>
+            <div class="{{c}}__icon-3 {{c}}__icon">
+                <img src="../assets/img/3.svg" alt="icon">
+            </div>
+            <div class="{{c}}__icon-4 {{c}}__icon">
+                <img src="../assets/img/4.svg" alt="icon">
+            </div>
+            <div class="{{c}}__icon-5 {{c}}__icon">
+                <img src="../assets/img/5.svg" alt="icon">
+            </div>
+            <div class="{{c}}__icon-6 {{c}}__icon">
+                <img src="../assets/img/6.svg" alt="icon">
+            </div>
+            <div class="{{c}}__link">
+                {% include '@root/includes/components/link-with-icon-tg.twig' with {
+                text:'Support Wowchatter',
+                link:'#'
+                } %}
+            </div>
+        </div>
+        <div class="{{c}}__wrapper-bottom">
+            {% include '@root/includes/components/btn-black.twig' with {
+            text:'Start telegram bot',
+            link:'#'
+            } %}
+            {% include '@root/includes/components/btn-outline.twig' with {
+            text:'Online form',
+            link:'#'
+            } %}
+        </div>
+    </div>
+</header>
+{% endwith %}

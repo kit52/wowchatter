@@ -1,0 +1,29 @@
+.chat-btn {
+    display: flex;
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    transition: fill 0.5s ease, color 0.5s ease, background 0.5s ease, border 0.5s ease;
+    @media (min-width: 992px) {
+        padding: 12px 16px;
+    }
+    svg {
+        fill: inherit;
+    }
+    &.chat-btn_white {
+        color: var(--blue);
+        fill: var(--blue);
+        background: #fff;
+        border: 1px solid var(--blue);
+    }
+    &.chat-btn_black {
+        color: #fff;
+        fill: #fff;
+        background: var(--grey);
+    }
+}

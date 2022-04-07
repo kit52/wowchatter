@@ -1,0 +1,24 @@
+@mixin font($fname, $fstyle, $fweight, $furl, $furl2) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    src: local($fname), url($furl) format("woff2"), url($furl2) format("woff");
+    font-display: swap; // Uncomment to initially display system fonts
+  }
+}
+@include font("Encode Sans", normal, 100, "../fonts/EncodeSans-Thin.woff2", "../fonts/EncodeSans-Thin.woff");
+@include font(
+  "Encode Sans",
+  normal,
+  200,
+  "../fonts/EncodeSans-ExtraLight.woff2",
+  "../fonts/EncodeSans-ExtraLight.woff"
+);
+@include font("Encode Sans", normal, 300, "../fonts/EncodeSans-Light.woff2", "../fonts/EncodeSans-Light.woff");
+@include font("Encode Sans", normal, 400, "../fonts/EncodeSans-Regular.woff2", "../fonts/EncodeSans-Regular.woff");
+@include font("Encode Sans", normal, 500, "../fonts/EncodeSans-Medium.woff2", "../fonts/EncodeSans-Medium.woff");
+@include font("Encode Sans", normal, 600, "../fonts/EncodeSans-SemiBold.woff2", "../fonts/EncodeSans-SemiBold.woff");
+@include font("Encode Sans", normal, 700, "../fonts/EncodeSans-Bold.woff2", "../fonts/EncodeSans-Bold.woff");
+@include font("Encode Sans", normal, 800, "../fonts/EncodeSans-ExtraBold.woff2", "../fonts/EncodeSans-ExtraBold.woff");
+@include font("Encode Sans", normal, 900, "../fonts/EncodeSans-Black.woff2", "../fonts/EncodeSans-Black.woff");

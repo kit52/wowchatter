@@ -1,0 +1,15 @@
+.list-item {
+    list-style-type: none;
+    margin: 0;
+    padding: 24px;
+    background: rgba(48, 48, 48, 0.05);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    .icon {
+        margin-right: 16px;
+    }
+    p {
+        margin: 0;
+    }
+}

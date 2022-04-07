@@ -1,0 +1,35 @@
+.link-with-icon-tg {
+    cursor: pointer;
+    fill: var(--grey);
+    border: 1px solid transparent;
+    display: inline-flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    @media (min-width: 992px) {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    span {
+        color: inherit;
+    }
+    svg {
+        fill: inherit;
+        margin-right: 8px;
+        @media (min-width: 992px) {
+            width: 20px;
+        }
+    }
+    &:hover {
+        color: var(--blue);
+        fill: var(--blue);
+        transition: fill 0.8s ease, color 0.8s ease;
+    }
+    &:focus {
+        border: 1px solid #0062d4;
+        border-radius: 8px;
+    }
+}
