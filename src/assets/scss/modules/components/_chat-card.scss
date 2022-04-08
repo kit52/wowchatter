@@ -14,7 +14,7 @@
     }
     &__chat {
         color: var(--grey);
-        margin-bottom: 16px;
+        margin-bottom: 12px;
         font-style: normal;
         font-weight: 500;
         font-size: 13px;
@@ -52,7 +52,7 @@
     }
     &__text {
         font-style: normal;
-        color: #17171a;
+        color: var(--grey-op);
         font-weight: 400;
         font-size: 14px;
         line-height: 18px;

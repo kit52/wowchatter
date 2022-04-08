@@ -37,12 +37,8 @@
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 18px;
+        line-height: 20px;
         color: var(--grey-op);
-        @media (min-width: 992px) {
-            font-size: 20px;
-            line-height: 25px;
-        }
     }
     fill: var(--grey);
     &:hover {
