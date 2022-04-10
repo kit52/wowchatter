@@ -27,28 +27,16 @@
             <div class="{{c}}__icon-6 {{c}}__icon">
                 <img src="./assets/img/6.svg" alt="icon">
             </div>
-            <div class="{{c}}__link">
+            {# <div class="{{c}}__link">
                 {% include '@root/includes/components/link-with-icon-tg.twig' with {
                 text:'Support Wowchatter',
                 link:'https://t.me/wowchatter'
                 } %}
-            </div>
+            </div> #}
         </div>
         <div class="{{c}}__wrapper-bottom">
             {% include '@root/includes/components/btn.twig' with {
-            svg:' <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M21.1651 3.71694L3.4351 10.5539C2.22509 11.0399 2.23209 11.7149 3.2131 12.0159L7.7651 13.4359L18.2971 6.79094C18.7951 6.48794 19.2501 6.65094 18.8761 6.98294L10.3431 14.6839H10.3411L10.3431 14.6849L10.0291 19.3769C10.4891 19.3769 10.6921 19.1659 10.9501 18.9169L13.1611 16.7669L17.7601 20.1639C18.6081 20.6309 19.2171 20.3909 19.4281 19.3789L22.4471 5.15094C22.7561 3.91194 21.9741 3.35094 21.1651 3.71694Z" />
-            </svg>',
-            addClass:'black',
-            text:'Start telegram bot',
-            link:'#'
-            } %}
-            {% include '@root/includes/components/btn.twig' with {
-            text:'Online form',
-            link:'https://docs.google.com/forms/d/e/1FAIpQLScs7mabnbcGumyxEKnTgwSEWvk3K0LnfvcTZBPnkMw9asTR7g/viewform',
-            addClass:'outline',
-            svg:' <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            svg:'<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.4"
                     d="M20.5 10.19H17.61C15.24 10.19 13.31 8.26 13.31 5.89V3C13.31 2.45 12.86 2 12.31 2H8.07C4.99 2 2.5 4 2.5 7.57V16.43C2.5 20 4.99 22 8.07 22H15.93C19.01 22 21.5 20 21.5 16.43V11.19C21.5 10.64 21.05 10.19 20.5 10.19Z"
                     fill-opacity="0.2" />
@@ -58,6 +46,18 @@
                     d="M13.5 13.75H7.5C7.09 13.75 6.75 13.41 6.75 13C6.75 12.59 7.09 12.25 7.5 12.25H13.5C13.91 12.25 14.25 12.59 14.25 13C14.25 13.41 13.91 13.75 13.5 13.75Z" />
                 <path
                     d="M11.5 17.75H7.5C7.09 17.75 6.75 17.41 6.75 17C6.75 16.59 7.09 16.25 7.5 16.25H11.5C11.91 16.25 12.25 16.59 12.25 17C12.25 17.41 11.91 17.75 11.5 17.75Z" />
+            </svg> ',
+            addClass:'black',
+            text:'Online form',
+            link:'https://docs.google.com/forms/d/e/1FAIpQLScs7mabnbcGumyxEKnTgwSEWvk3K0LnfvcTZBPnkMw9asTR7g/viewform'
+            } %}
+            {% include '@root/includes/components/btn.twig' with {
+            text:'Support Wowchatter',
+            link:'https://t.me/wowchatter',
+            addClass:'outline',
+            svg:' <svg width="24" height="24" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M19.1646 0.717064L1.43461 7.55407C0.224606 8.04007 0.231607 8.71507 1.21261 9.01607L5.76461 10.4361L16.2966 3.79106C16.7946 3.48806 17.2496 3.65106 16.8756 3.98306L8.34261 11.6841H8.34061L8.34261 11.6851L8.02861 16.3771C8.48861 16.3771 8.69161 16.1661 8.94961 15.9171L11.1606 13.7671L15.7596 17.1641C16.6076 17.6311 17.2166 17.3911 17.4276 16.3791L20.4466 2.15106C20.7556 0.912064 19.9736 0.351064 19.1646 0.717064Z" />
             </svg>'
             } %}
         </div>
