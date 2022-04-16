@@ -1,0 +1,28 @@
+.section-list {
+    h2 {
+        margin-top: 0;
+        margin-bottom: 24px;
+        color: var(--grey);
+        text-align: center;
+        @media (min-width: 992px) {
+            margin-bottom: 56px;
+        }
+    }
+    .list {
+        padding: 0;
+        margin: 0;
+        @media (min-width: 992px) {
+            column-gap: 30px;
+            column-count: 2;
+        }
+        &-item {
+            margin-bottom: 8px;
+            @media (min-width: 992px) {
+                margin-bottom: 32px;
+            }
+        }
+    }
+    .content {
+        margin-bottom: 32px;
+    }
+}

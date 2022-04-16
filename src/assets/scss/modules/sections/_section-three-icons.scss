@@ -1,0 +1,110 @@
+.section-three-icons {
+    h2 {
+        text-align: center;
+        max-width: 290px;
+        @media (min-width: 560px) {
+            max-width: 580px;
+        }
+    }
+    &__title {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .btn_black,
+    .btn_outline {
+        display: none;
+        @media (min-width: 560px) {
+            display: inline-flex;
+        }
+    }
+    .btn_black {
+        margin-right: 24px;
+    }
+    .btn_blue,
+    .btn_outline-blue-text {
+        display: inline-flex;
+        @media (min-width: 560px) {
+            display: none;
+        }
+    }
+    .btn_blue {
+        margin-bottom: 12px;
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: 560px) {
+            display: block;
+            flex-direction: unset;
+            align-items: unset;
+        }
+    }
+    &__left {
+        max-width: 730px;
+        p {
+            position: relative;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 25px;
+            margin: 0;
+            margin-bottom: 40px;
+            @media (min-width: 768px) {
+                margin-right: 20px;
+            }
+            @media (min-width: 992px) {
+                font-size: 20px;
+                line-height: 34px;
+
+                margin-right: 0;
+            }
+        }
+    }
+    &__right {
+        display: none;
+        @media (min-width: 768px) {
+            display: block;
+        }
+        img {
+            max-width: 150px;
+            @media (min-width: 992px) {
+                max-width: none;
+            }
+        }
+    }
+    &__icon {
+        position: absolute;
+
+        display: block;
+        @media (min-width: 768px) {
+            display: none;
+        }
+        img {
+            width: 40px;
+        }
+    }
+    &__text {
+        position: relative;
+    }
+    &__icon-7 {
+        transform: rotate(13.55deg);
+        right: 10px;
+        top: -36px;
+    }
+    &__icon-8 {
+        transform: rotate(98deg);
+        left: 12px;
+        bottom: 10px;
+    }
+    &__icon-9 {
+        transform: rotate(-10deg);
+        right: -2px;
+        bottom: -31px;
+    }
+}

@@ -1,0 +1,15 @@
+<section class=" section section-list">
+    <div class="container">
+        <div class="content">
+            <h2 class="title">What is included in chat activity</h2>
+            <ul class="list">
+                {% for item in list %}
+                {% include '@root/includes/components/list-item.twig' with {
+                text:item
+                }%}
+                {% endfor %}
+            </ul>
+        </div>
+        {# {% include '@root/includes/components/attention.twig' %} #}
+    </div>
+</section>

@@ -1,0 +1,15 @@
+.section-chats {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 16px;
+        justify-items: center;
+        @media (min-width: 560px) {
+            grid-gap: 30px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    h2 {
+        text-align: center;
+    }
+}

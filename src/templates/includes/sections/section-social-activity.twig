@@ -1,0 +1,15 @@
+<section class=" section  section-social-activity">
+    <div class="container">
+        <div class="content">
+            <h2 class="title">Social media activity </h2>
+            <div class="cards">
+                {% for card in cards %}
+                {% include '@root/includes/components/chat-card.twig' with {
+                card
+                } %}
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</section>

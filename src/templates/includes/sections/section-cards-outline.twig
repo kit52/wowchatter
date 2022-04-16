@@ -1,0 +1,9 @@
+<section class="section section-cards-outline">
+    <div class="container">
+        {% for card in cards %}
+        {% include '@root/includes/components/card-outline.twig' with {
+        card
+        } %}
+        {% endfor %}
+    </div>
+</section>
