@@ -1,9 +1,9 @@
-<section class=" section  section-social-activity">
+<section class=" section  section-social-activity {{addClass}}">
     <div class="container">
         <div class="content">
-            <h2 class="title">Social media activity </h2>
+            <h2 class="title">{{socialActivitySection.title}}</h2>
             <div class="cards">
-                {% for card in cards %}
+                {% for card in socialActivitySection.cards %}
                 {% include '@root/includes/components/chat-card.twig' with {
                 card
                 } %}

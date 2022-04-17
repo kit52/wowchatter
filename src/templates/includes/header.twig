@@ -6,8 +6,11 @@
         </div>
         <div class="{{c}}__menu">
             <ul>
-                <li class="{{c}}__menu-item"><a href="#">Home</a></li>
-                <li class="{{c}}__menu-item {{c}}__menu-item-submenu">Chats activity
+                {% for item in header.desctop %}
+
+                {% if item.submenu %}
+                <li class="{{c}}__menu-item {{c}}__menu-item-submenu {{item.selected ? 'current' }}">
+                    {{item.name}}
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M11.9467 5.45312H7.79335H4.05335C3.41335 5.45312 3.09335 6.22646 3.54668 6.67979L7.00002 10.1331C7.55335 10.6865 8.45335 10.6865 9.00668 10.1331L10.32 8.81979L12.46 6.67979C12.9067 6.22646 12.5867 5.45312 11.9467 5.45312Z"
@@ -16,26 +19,18 @@
 
 
                     <ul class="submenu">
-                        <li><a href="#">Telegram promotion</a></li>
-                        <li><a href="#">Discord promotion</a></li>
+                        {% for el in item.items %}
+                        <li><a href="{{el.link}}">{{el.name}}</a></li>
+                        {% endfor %}
                     </ul>
                 </li>
-                <li class="{{c}}__menu-item {{c}}__menu-item-submenu">Social media activity
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M11.9467 5.45312H7.79335H4.05335C3.41335 5.45312 3.09335 6.22646 3.54668 6.67979L7.00002 10.1331C7.55335 10.6865 8.45335 10.6865 9.00668 10.1331L10.32 8.81979L12.46 6.67979C12.9067 6.22646 12.5867 5.45312 11.9467 5.45312Z"
-                            fill="#303030" />
-                    </svg>
-
-
-                    <ul class=" submenu">
-                        <li><a href="#">Twitter activity</a></li>
-                        <li><a href="#">Reddit activity</a></li>
-                        <li><a href="#">YouTube activity</a></li>
-                        <li><a href="#">Instagram activity</a></li>
-                    </ul>
+                {% else %}
+                <li class="{{c}}__menu-item {{item.selected ? 'current' }}"><a href="{{item.link}}">{{item.name}}</a>
                 </li>
-                <li class="{{c}}__menu-item"><a href="#">Contact us</a></li>
+                {% endif %}
+                {% endfor %}
+
+
             </ul>
         </div>
         <div class="{{c}}__link">
@@ -53,14 +48,9 @@
 </header>
 <div class="nav nav-mobile">
     <ul class="nav-mobile__list">
-        <li class="nav-mobile__list-item"><a href="http://">Home</a></li>
-        <li class="nav-mobile__list-item"><a href="http://">Telegram promotion</a></li>
-        <li class="nav-mobile__list-item"><a href="http://">Discord promotion </a></li>
-        <li class="nav-mobile__list-item"><a href="http://">Twitter activity</a></li>
-        <li class="nav-mobile__list-item"><a href="http://">Reddit activity</a></li>
-        <li class="nav-mobile__list-item"><a href="http://">YouTube activity</a></li>
-        <li class="nav-mobile__list-item"><a href="http://">Instagram activity</a></li>
-        <li class="nav-mobile__list-item"><a href="http://">Contact us</a></li>
+        {% for item in header.items %}
+        <li class="nav-mobile__list-item"><a href="{{item.link}}">{{item.name}}</a></li>
+        {% endfor %}
     </ul>
 </div>
 {% endwith %}

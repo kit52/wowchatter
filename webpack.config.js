@@ -2,9 +2,11 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import path from 'path'
 import webpack from 'webpack'
 import TerserPlugin from 'terser-webpack-plugin'
-import {VueLoaderPlugin} from "vue-loader";
 
-const {Compiler} = webpack
+
+const IS_PROD = process.env.NODE_ENV === 'production'
+
+const { Compiler } = webpack
 const config = {
   entry: './src/assets/js/main.js',
   output: {
@@ -12,13 +14,16 @@ const config = {
     chunkFilename: './chunks/[name].js',
     publicPath: '/assets/js/'
   },
-  mode: 'production',
+  resolve: {
+    symlinks: false,
+  },
+  mode: IS_PROD ? 'production' : 'development',
 
   plugins: [
     new MiniCssExtractPlugin({
       filename: '../css/chunks.css'
     }),
-    new VueLoaderPlugin(),
+
     new webpack.ProgressPlugin((percentage, message) => {
       if (percentage * 100 % 10 === 0) {
         console.log(`${(percentage * 100).toFixed()}% ${message}`);
@@ -44,6 +49,7 @@ const config = {
       {
         test: /\.css$/i,
         use: [
+
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
@@ -53,7 +59,7 @@ const config = {
           "css-loader"
         ],
       },
-      {test: /\.vue$/, use: 'vue-loader'}
+
     ]
   },
   optimization: {
@@ -62,7 +68,7 @@ const config = {
     minimizer: [
       (compiler = new Compiler()) => {
         new TerserPlugin({
-          terserOptions: {format: {comments: false}},
+          terserOptions: { format: { comments: false } },
           extractComments: false
         }).apply(compiler)
       }

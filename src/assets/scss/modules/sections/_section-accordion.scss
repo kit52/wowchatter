@@ -1,0 +1,90 @@
+.section-accordion {
+    margin-bottom: 100px;
+    .ac {
+        border: none;
+        &-header {
+            @media (min-width: 768px) {
+                &:hover {
+                    button {
+                        background: rgba(0, 98, 212, 0.05);
+                    }
+                    span {
+                        color: var(--blue);
+                    }
+                    svg {
+                        fill: var(--blue);
+                    }
+                }
+            }
+            button {
+                transition: all 0.3s ease;
+                padding: 12px;
+                background: rgba(48, 48, 48, 0.05);
+                border-radius: 8px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &::after {
+                    content: none !important;
+                }
+                @media (min-width: 768px) {
+                    padding: 24px;
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+                span {
+                    transition: all 0.3s ease;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    width: calc(100% - 21px);
+                    @media (min-width: 768px) {
+                        width: calc(100% - 29px);
+                        font-size: 20px;
+                        line-height: 25px;
+                    }
+                }
+            }
+
+            svg {
+                transition: all 0.3s ease;
+                margin-left: 5px;
+                width: 16px;
+                fill: var(--grey);
+                @media (min-width: 768px) {
+                    width: 24px;
+                }
+            }
+        }
+    }
+    .ac-panel {
+        .ac-content {
+            color: var(--grey-op);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            padding: 8px;
+
+            @media (min-width: 768px) {
+                font-size: 18px;
+                line-height: 22px;
+                padding: 24px 12px;
+            }
+        }
+    }
+}
+.ac.is-active {
+    svg {
+        transform: rotate(90deg);
+        fill: #fff;
+    }
+    button {
+        background: var(--blue);
+    }
+    span {
+        color: #fff;
+    }
+}

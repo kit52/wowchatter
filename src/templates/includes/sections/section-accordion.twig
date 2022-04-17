@@ -1,0 +1,28 @@
+{% with {class:"section-accordion"} %}
+<sections class=" {{ class }} section">
+    <div class="container ">
+        <h2 class="title">FAQ</h2>
+        <div class="accordion-container">
+            {% for item in accordions %}
+            <div class="ac ">
+                <h3 class="ac-header">
+                    <button class="ac-trigger">
+                        <span>{{item.title}} </span>
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.05"
+                                d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" />
+                            <path
+                                d="M10.7397 16.7802C10.5497 16.7802 10.3597 16.7102 10.2097 16.5602C9.91969 16.2702 9.91969 15.7902 10.2097 15.5002L13.2097 12.5002L10.2097 9.50016C9.91969 9.21016 9.91969 8.73016 10.2097 8.44016C10.4997 8.15016 10.9797 8.15016 11.2697 8.44016L14.7997 11.9702C15.0897 12.2602 15.0897 12.7402 14.7997 13.0302L11.2697 16.5602C11.1197 16.7102 10.9297 16.7802 10.7397 16.7802Z" />
+                        </svg></button>
+                </h3>
+                <div class="ac-panel">
+                    <div class="ac-content">
+                        {{item.text}}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</sections>
+{% endwith %}

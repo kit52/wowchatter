@@ -1,9 +1,9 @@
 <section class=" section section-list">
     <div class="container">
         <div class="content">
-            <h2 class="title">What is included in chat activity</h2>
+            <h2 class="title">{{listSection.title}}</h2>
             <ul class="list">
-                {% for item in list %}
+                {% for item in listSection.list %}
                 {% include '@root/includes/components/list-item.twig' with {
                 text:item
                 }%}

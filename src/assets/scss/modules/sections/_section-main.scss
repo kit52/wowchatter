@@ -1,4 +1,9 @@
 .section-main {
+    margin-top: 50px;
+    @media (min-width: 992px) {
+        margin-top: 84px;
+    }
+
     h1 {
         text-align: center;
         margin-bottom: 56px;

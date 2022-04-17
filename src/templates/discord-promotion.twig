@@ -1,0 +1,22 @@
+{% extends "layouts/default.twig" %}
+{% block content %}
+<!---->
+{% include '@root/includes/sections/breadcrumbs.twig' %}
+{% include '@root/includes/sections/section-chats.twig' with {
+cards:chatSection.cards,
+addClass:'section-chats-other'
+} %}
+{% include '@root/includes/sections/section-chat-second.twig' with {
+cards:chatSectionSecond.cards,
+addClass:'section-chats-other'
+} %}
+
+{% include '@root/includes/sections/section-list.twig' with {
+list:listSection
+} %}
+{% include '@root/includes/sections/section-video.twig' %}
+{% include '@root/includes/sections/section-accordion.twig' with {
+accordions:accordionSection.accordions
+} %}
+<!---->
+{% endblock %}

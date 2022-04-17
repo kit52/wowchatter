@@ -1,9 +1,12 @@
-<section class=" section section-chats">
+<section class=" section section-chats {{addClass}}">
     <div class="container">
         <div class="content">
-            <h2 class="title">Chats</h2>
+            <h2 class="title">{{chatSection.title}}</h2>
+            {% if chatSection.subtitle %}
+            <p class="subtitle">{{chatSection.subtitle}}</p>
+            {% endif %}
             <div class="cards">
-                {% for card in cards %}
+                {% for card in chatSection.cards %}
                 {% include '@root/includes/components/chat-card.twig' with {
                 card
                 } %}

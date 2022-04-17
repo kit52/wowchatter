@@ -3,7 +3,15 @@
     margin-bottom: 50px;
     @media (min-width: 992px) {
         margin-top: 40px;
-        margin-bottom: 84px;
+        margin-bottom: 0;
+    }
+    .current {
+        background-color: var(--blue);
+        color: #ffffff;
+        border-radius: 8px;
+        a {
+            color: #ffffff;
+        }
     }
     .container {
         display: flex;
@@ -69,7 +77,7 @@
                 }
             }
         }
-        &-item {
+        .header__menu-item {
             font-style: normal;
             cursor: pointer;
             font-weight: 400;
@@ -78,6 +86,7 @@
             margin-bottom: 24px;
             position: relative;
             transition: all 0.3s ease;
+            border-radius: 8px;
             @media (min-width: 992px) {
                 padding: 8px;
                 font-size: 16px;
@@ -94,6 +103,9 @@
                     color: var(--blue);
                     background: rgba(0, 98, 212, 0.05);
                     border-radius: 8px;
+                    a {
+                        color: var(--blue);
+                    }
                 }
             }
             @media (min-width: 1200px) {
@@ -178,10 +190,6 @@
                 transition: all 0.3s ease 0s;
             }
         }
-    }
-    .current {
-        background-color: var(--blue);
-        color: #ffffff;
     }
 }
 .nav-mobile {

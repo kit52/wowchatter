@@ -68,6 +68,7 @@ h2 {
 }
 .section {
     margin-bottom: 54px;
+    display: block;
     @media (min-width: 992px) {
         margin-bottom: 104px;
     }
@@ -79,6 +80,23 @@ h2 {
         text-align: center;
         @media (min-width: 768px) {
             margin-bottom: 56px;
+        }
+    }
+    .subtitle {
+        color: var(--grey-op);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 32px;
+        max-width: 290px;
+        @media (min-width: 768px) {
+            font-size: 16px;
+            line-height: 130%;
+            margin-bottom: 56px;
+            max-width: 540px;
         }
     }
 }

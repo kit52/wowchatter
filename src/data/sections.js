@@ -122,17 +122,21 @@ export const blackSection = {
     }
     ]
 }
-export const listSection = [
-    'Live communication',
-    "New users’ greeting and answering all questions asked by the community ",
-    "Keep everyone updated ",
-    "Haters handling",
-    "24/7 administration",
-    "Interactive and ruffles <br> promotion",
-    "Handling users complaints",
-    "Deleting spam"
-]
+export const listSection = {
+    title: 'What is included in chat activity',
+    list: [
+        'Live communication',
+        "New users’ greeting and answering all questions asked by the community ",
+        "Keep everyone updated ",
+        "Haters handling",
+        "24/7 administration",
+        "Interactive and ruffles <br> promotion",
+        "Handling users complaints",
+        "Deleting spam"
+    ]
+}
 export const chatSection = {
+    title: 'Chats',
     cards: [{
         title: 'Up to 2 000 messages',
         text: "Best option one month in advance before project's release",
@@ -155,6 +159,7 @@ export const chatSection = {
     ]
 }
 export const chatSectionSecond = {
+    title: 'Community Management 24/7',
     cards: [{
         title: 'Community Management 24/7',
         text: "Moderation, deleting spam, answering questions ",
@@ -172,6 +177,7 @@ export const chatSectionSecond = {
     ]
 }
 export const socialActivitySection = {
+    title: 'Social media activity',
     cards: [
         {
             title: '100 comments on social media',
@@ -182,4 +188,186 @@ export const socialActivitySection = {
 
 
     ]
+}
+export const accordionSection = {
+    accordions: [
+        {
+            title: 'What is community marketing?',
+            text: `The basis for marketing your blockchain projects to the global audience is building community.And platforms like Discord and Telegram, as well as other social media, help you create bonds with your audiences.That is why it is very important to connect our real community marketing via “wowchatter’.Our NFT/ Blockchain / GameFi / DeFi community marketing strategies will help you with creating unprecedented value for your entire community.We provide loyalty from the community members with engagement and support.Our team of specialists will create effective community- building strategies that specifically help with your project’s values on different platforms to grow much faster and stronger.`,
+        },
+        {
+            title: 'Is it safe to buy live activity for my chats?',
+            text: `Our tested crypto marketing tactics and results-driven approach make the process safe and transparent, and help you watch your blockchain community growing live! All payments occur on the blockchain, thus making your transactions transparent.`,
+        },
+        {
+            title: 'What payment methods are available?',
+            text: `What payment methods are available?`,
+        }, {
+            title: 'How is activity created on my media projects?',
+            text: `A team of specialists deeply involved in your blockchain / nft / gamefi / defi runs live chats activities in your telegram, discord and any other chats of your project using live users accounts. We are a real crypto loyal community that meets new potential customers, answers all the questions asked, accompanies members of your community before whitelist, handles hateful and negative comments, moderates chats, and all this happens live 24/7! Just choose the right service option for your project and buy a REAL blockchain loyal community.`,
+        }, {
+            title: 'Why is it important to have an active live community for my project?',
+            text: `Our community marketing will provide promotion for your NFT/Blockchain/GameFi/DeFi project, revive your ico chats in telegrams and discord, increase sales conversion and attract a new engaged audience.`,
+        },
+    ]
+}
+export const telegram = {
+    chatSection: {
+        title: 'Telegram promotion',
+        subtitle: 'Buy real Telegram activity. Get a successful Telegram marketing tool',
+        cards: [{
+            title: 'Up to 2 000 messages',
+            text: "Best option one month in advance before project's release",
+            price: '$ 600 / month',
+            ticket: '1 chat'
+        },
+        {
+            title: 'Up to 3 000 messages',
+            text: "Best option before launch during the marketing campaign",
+            price: '$ 800 / month',
+            ticket: '1 chat'
+        },
+        {
+            title: 'Up to 5 000- 7 000 messages',
+            text: "Best option after project's launch",
+            price: '$ 1 200 / month',
+            ticket: '1 chat'
+        },
+
+        ]
+    },
+    chatSectionSecond: {
+        title: 'Community Management 24/7',
+        subtitle: 'Connect a professional Telegram Community Manager. Quality help in promoting your crypto, NFT, GameFi, DeFi, blockchain community, campaigns, ICO,IDO. We can also create and set up a chat room, collect chat subscribers, connect bots and set up autofeeds ',
+        cards: [{
+            title: 'Community Management 24/7',
+            text: "Moderation, deleting spam, answering questions ",
+            price: '$ 300 ',
+            ticket: '1 chat'
+        },
+        {
+            title: 'Chat creation and setting',
+            text: "Chat creating, bots, autofeeds setting",
+            price: '$ 100 ',
+            ticket: '1 chat'
+        },
+
+
+        ]
+    },
+    listSection: {
+        title: 'What is included in chat activity',
+        list: [
+            'Live communication',
+            "New users’ greeting and answering all questions asked by the community ",
+            "Keep everyone updated ",
+            "Haters handling",
+            "24/7 administration",
+            "Interactive and ruffles <br> promotion",
+            "Handling users complaints",
+            "Deleting spam"
+        ]
+    },
+    accordionSection: {
+        accordions: [
+            {
+                title: 'What is community marketing?',
+                text: `The basis for marketing your blockchain projects to the global audience is building community.And platforms like Discord and Telegram, as well as other social media, help you create bonds with your audiences.That is why it is very important to connect our real community marketing via “wowchatter’.Our NFT/ Blockchain / GameFi / DeFi community marketing strategies will help you with creating unprecedented value for your entire community.We provide loyalty from the community members with engagement and support.Our team of specialists will create effective community- building strategies that specifically help with your project’s values on different platforms to grow much faster and stronger.`,
+            },
+            {
+                title: 'Is it safe to buy live activity for my chats?',
+                text: `Our tested crypto marketing tactics and results-driven approach make the process safe and transparent, and help you watch your blockchain community growing live! All payments occur on the blockchain, thus making your transactions transparent.`,
+            },
+            {
+                title: 'What payment methods are available?',
+                text: `What payment methods are available?`,
+            }, {
+                title: 'How is activity created on my media projects?',
+                text: `A team of specialists deeply involved in your blockchain / nft / gamefi / defi runs live chats activities in your telegram, discord and any other chats of your project using live users accounts. We are a real crypto loyal community that meets new potential customers, answers all the questions asked, accompanies members of your community before whitelist, handles hateful and negative comments, moderates chats, and all this happens live 24/7! Just choose the right service option for your project and buy a REAL blockchain loyal community.`,
+            }, {
+                title: 'Why is it important to have an active live community for my project?',
+                text: `Our community marketing will provide promotion for your NFT/Blockchain/GameFi/DeFi project, revive your ico chats in telegrams and discord, increase sales conversion and attract a new engaged audience.`,
+            },
+        ]
+    }
+}
+export const discord = {
+    chatSection: {
+        title: 'Discord promotion',
+        subtitle: 'Buy real Discord activity. Get successful Discord marketing tool',
+        cards: [{
+            title: 'Up to 2 000 messages',
+            text: "Best option one month in advance before project's release",
+            price: '$ 600 / month',
+            ticket: '1 chat'
+        },
+        {
+            title: 'Up to 3 000 messages',
+            text: "Best option before launch during the marketing campaign",
+            price: '$ 800 / month',
+            ticket: '1 chat'
+        },
+        {
+            title: 'Up to 5 000- 7 000 messages',
+            text: "Best option after project's launch",
+            price: '$ 1 200 / month',
+            ticket: '1 chat'
+        },
+
+        ]
+    },
+    chatSectionSecond: {
+        title: 'Community Management 24/7',
+        subtitle: 'Connect a professional Telegram Community Manager. Quality help in promoting your crypto, NFT, GameFi, DeFi, blockchain community, campaigns, ICO,IDO. We can also create and set up a chat room, collect chat subscribers, connect bots and set up autofeeds ',
+        cards: [{
+            title: 'Community Management 24/7',
+            text: "Moderation, deleting spam, answering questions ",
+            price: '$ 300 ',
+            ticket: '1 chat'
+        },
+        {
+            title: 'Chat creation and setting',
+            text: "Chat creating, bots, autofeeds setting",
+            price: '$ 100 ',
+            ticket: '1 chat'
+        },
+
+
+        ]
+    },
+    listSection: {
+        title: 'What is included in chat activity',
+        list: [
+            'Live communication',
+            "New users’ greeting and answering all questions asked by the community ",
+            "Keep everyone updated ",
+            "Haters handling",
+            "24/7 administration",
+            "Interactive and ruffles <br> promotion",
+            "Handling users complaints",
+            "Deleting spam"
+        ]
+    },
+    accordionSection: {
+        accordions: [
+            {
+                title: 'What is community marketing?',
+                text: `The basis for marketing your blockchain projects to the global audience is building community.And platforms like Discord and Telegram, as well as other social media, help you create bonds with your audiences.That is why it is very important to connect our real community marketing via “wowchatter’.Our NFT/ Blockchain / GameFi / DeFi community marketing strategies will help you with creating unprecedented value for your entire community.We provide loyalty from the community members with engagement and support.Our team of specialists will create effective community- building strategies that specifically help with your project’s values on different platforms to grow much faster and stronger.`,
+            },
+            {
+                title: 'Is it safe to buy live activity for my chats?',
+                text: `Our tested crypto marketing tactics and results-driven approach make the process safe and transparent, and help you watch your blockchain community growing live! All payments occur on the blockchain, thus making your transactions transparent.`,
+            },
+            {
+                title: 'What payment methods are available?',
+                text: `What payment methods are available?`,
+            }, {
+                title: 'How is activity created on my media projects?',
+                text: `A team of specialists deeply involved in your blockchain / nft / gamefi / defi runs live chats activities in your telegram, discord and any other chats of your project using live users accounts. We are a real crypto loyal community that meets new potential customers, answers all the questions asked, accompanies members of your community before whitelist, handles hateful and negative comments, moderates chats, and all this happens live 24/7! Just choose the right service option for your project and buy a REAL blockchain loyal community.`,
+            }, {
+                title: 'Why is it important to have an active live community for my project?',
+                text: `Our community marketing will provide promotion for your NFT/Blockchain/GameFi/DeFi project, revive your ico chats in telegrams and discord, increase sales conversion and attract a new engaged audience.`,
+            },
+        ]
+    }
 }

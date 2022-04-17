@@ -8,20 +8,14 @@ cards:outlineCardsSection.cards
 cards:blackSection.cards
 } %}
 
-{% include '@root/includes/sections/section-list.twig' with {
-list:listSection
-} %}
+{% include '@root/includes/sections/section-list.twig' %}
 {% include '@root/includes/sections/section-video.twig' %}
 {% include '@root/includes/sections/section-three-icons.twig' %}
-{% include '@root/includes/sections/section-chats.twig' with {
-cards:chatSection.cards
-} %}
+{% include '@root/includes/sections/section-chats.twig' %}
 
-{% include '@root/includes/sections/section-chat-second.twig' with {
-cards:chatSectionSecond.cards
+{% include '@root/includes/sections/section-chat-second.twig' %}
+{% include '@root/includes/sections/section-social-activity.twig' %}
+{% include '@root/includes/sections/section-accordion.twig' with {
+accordions:accordionSection.accordions
 } %}
-{% include '@root/includes/sections/section-social-activity.twig' with {
-cards:socialActivitySection.cards
-} %}
-
 {% endblock %}
