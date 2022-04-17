@@ -1,13 +1,16 @@
 {
-  "name": "wowchatter",
+  "name": "twig-example",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development gulp",
+    "prod": "cross-env NODE_ENV=production gulp",
+    "transfer": "cross-env NODE_ENV=production gulp transfer"
   },
-  "author": "Alex",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.16.5",
@@ -18,6 +21,7 @@
     "babel-plugin-module-resolver": "^4.0.0",
     "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.26.14",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.2.0",
     "del": "^6.0.0",
     "express": "^4.17.1",
@@ -38,7 +42,7 @@
     "gulp-tap": "^2.0.0",
     "gulp-twig": "^1.2.0",
     "mini-css-extract-plugin": "^2.2.0",
-    "node-sass": "^5.0.0",
+    "node-sass": "^6.0.0",
     "nodemon": "^2.0.14",
     "sass-loader": "^10.1.1",
     "terser-webpack-plugin": "^5.1.4",
@@ -47,9 +51,16 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-
-    "accordion-js": "^3.2.0",
+    "@lottiefiles/lottie-player": "^1.4.4",
+    "accordion-js": "^3.1.1",
+    "bodymovin": "^4.13.0",
+    "cleave.js": "^1.6.0",
+    "colorthief": "^2.3.2",
+    "mitt": "^3.0.0",
+    "rellax": "^1.12.1",
     "sass": "^1.45.0"
+
+
 
   }
 }

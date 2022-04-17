@@ -5,7 +5,6 @@ import TerserPlugin from 'terser-webpack-plugin'
 
 
 const IS_PROD = process.env.NODE_ENV === 'production'
-
 const { Compiler } = webpack
 const config = {
   entry: './src/assets/js/main.js',
@@ -13,9 +12,6 @@ const config = {
     filename: '[name].min.js',
     chunkFilename: './chunks/[name].js',
     publicPath: '/assets/js/'
-  },
-  resolve: {
-    symlinks: false,
   },
   mode: IS_PROD ? 'production' : 'development',
 
@@ -49,7 +45,6 @@ const config = {
       {
         test: /\.css$/i,
         use: [
-
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
@@ -88,7 +83,8 @@ const config = {
         },
       },
     },
-  }
+  },
+  devtool: IS_PROD ? false : 'eval'
 }
 
 export default config

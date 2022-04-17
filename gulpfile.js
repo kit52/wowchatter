@@ -1,5 +1,4 @@
 let fileswatch = 'html,htm,txt,json,md,woff2,php,twig' // List of files extensions for watching & hard reload
-import port from './server.js'
 import gulp from 'gulp'
 import browserSync from 'browser-sync'
 import webpackStream from 'webpack-stream'
@@ -59,12 +58,15 @@ function express(cb) {
     });
 }
 
-function browsersync(cb) {
+async function browsersync(cb) {
+  const module = await import('./server.js')
+  const port = module.default;
+
   browserSync.init({
     proxy: 'localhost:' + port,
     startPath: '/',
     host: 'localhost',
-    port: 5001,
+    port: 5000,
     notify: false,
     online: true,
     logPrefix: 'Proxy to localhost:' + port
@@ -73,7 +75,7 @@ function browsersync(cb) {
 }
 
 function twigBuild() {
-  return src([paths.src + '/templates/*.html'])
+  return src([paths.src + '/templates/*.twig'])
     .pipe(flatmap(function (stream, file) {
       const fileName = file.stem
       const twigData = {
@@ -88,7 +90,7 @@ function twigBuild() {
           }
         }))
         .pipe(twig({
-          extname: '.php',
+          extname: '.html',
           data: twigData,
           namespaces: { 'root': 'src/templates/' }
         }))
@@ -102,16 +104,25 @@ function twigBuild() {
 
 
 function scripts() {
+  return scriptsNoBS()
+    .pipe(browserSync.reload({ stream: true }))
+}
+
+function scriptsNoBS() {
   del([paths.js + '/chunks/**', paths.js + '/vendors/**'], { force: true })
   return src(paths.js + '/main.js', { allowEmpty: true })
     .pipe(webpackStream(webpackConfig, webpack)).on('error', function handleError() {
       this.emit('end')
     })
     .pipe(dest(paths.js))
-    .pipe(browserSync.reload({ stream: true }))
 }
 
 function styles() {
+  return stylesNoBS()
+    .pipe(browserSync.reload({ stream: true }))
+}
+
+function stylesNoBS() {
   return src(paths.sass + '/**/*.scss')
     .pipe(sassGlob())
     .pipe(sass({
@@ -125,16 +136,19 @@ function styles() {
     .pipe(gcmq())
     .pipe(cleanCSS())
     .pipe(dest(paths.css))
-    .pipe(browserSync.reload({ stream: true }))
 }
 
 function minChunks() {
+  return minChunksNoBS()
+    .pipe(browserSync.reload({ stream: true }))
+}
+
+function minChunksNoBS() {
   return src(paths.css + '/**/chunks.css')
     .pipe(gcmq())
     .pipe(cleanCSS())
     .pipe(rename('chunks.min.css'))
     .pipe(dest(paths.css))
-    .pipe(browserSync.reload({ stream: true }))
 }
 
 function images() {
@@ -186,5 +200,5 @@ function transferAssets() {
 
 export let build = series(clearDist, styles, images, twigBuild, createBuild)
 export let prod = series(scripts, minChunks, images, styles, parallel(express))
-export let transfer = series(scripts, minChunks, images, styles, transferAssets)
+export let transfer = series(scriptsNoBS, minChunksNoBS, images, stylesNoBS, transferAssets)
 export default series(scripts, minChunks, images, styles, express, parallel(startwatch, browsersync))

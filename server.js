@@ -2,6 +2,8 @@ import Twig from 'twig'
 import express from 'express'
 import path from 'path'
 import fs from 'fs'
+import router from "./api/cart/routes.js";
+
 
 export const app = express();
 
@@ -108,6 +110,7 @@ app.get('/', function (req, res) {
   );
 });
 
+app.use('/api', router)
 
 const listener = app.listen();
 const port = listener.address().port;
