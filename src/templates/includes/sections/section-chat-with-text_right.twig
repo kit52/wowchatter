@@ -1,0 +1,18 @@
+<section class=" section section-chat-with-text_right{{addClass}}">
+    <div class="container">
+        <h1 class="title">{{chatSection.title | raw}}</h1>
+        <div class="content">
+
+            <div class="content">
+
+                {% include '@root/includes/components/chat-card.twig' with {
+                card:chatSection.card
+                } %}
+                <div class="text">
+                    <p>{{chatSection.text | raw}}</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

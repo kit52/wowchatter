@@ -1,0 +1,26 @@
+{% with {c:"contac-top-section"} %}
+<section class="{{c}} section">
+
+    <div class="container">
+        <div class="{{c}}__wrapper-top">
+            <h1 class="title">{{contactUs.title}}</h1>
+            <div class="{{c}}__subtitle">
+                {{contactUs.text}}
+            </div>
+            <div class="{{c}}__icon-2 {{c}}__icon">
+                <img src="./assets/img/2.svg" alt="icon">
+            </div>
+            <div class="{{c}}__icon-4 {{c}}__icon">
+                <img src="./assets/img/4.svg" alt="icon">
+            </div>
+        </div>
+        <div class="{{c}}__cards">
+            {% for card in contactUs.cards %}
+            {% include '@root/includes/components/chat-card_small.twig' with {
+            card:card
+            }%}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endwith %}

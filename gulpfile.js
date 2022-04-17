@@ -22,7 +22,7 @@ import cleanCSS from 'gulp-clean-css'
 import webpackConfig from './webpack.config.js'
 import webpack from 'webpack'
 
-const {src, dest, parallel, series, watch} = gulp
+const { src, dest, parallel, series, watch } = gulp
 var paths = {
   src: './src',
   build: './dist',
@@ -44,7 +44,7 @@ function express(cb) {
   return nodemon({
     script: 'server.js',
     ext: 'twig',
-    env: {'NODE_ENV': 'development'},
+    env: { 'NODE_ENV': 'development' },
   })
     .on('start', function () {
       if (!start) {
@@ -73,7 +73,7 @@ function browsersync(cb) {
 }
 
 function twigBuild() {
-  return src([paths.src + '/templates/*.twig'])
+  return src([paths.src + '/templates/*.html'])
     .pipe(flatmap(function (stream, file) {
       const fileName = file.stem
       const twigData = {
@@ -90,7 +90,7 @@ function twigBuild() {
         .pipe(twig({
           extname: '.php',
           data: twigData,
-          namespaces: {'root': 'src/templates/'}
+          namespaces: { 'root': 'src/templates/' }
         }))
         .on('error', function (err) {
           process.stderr.write(err.message + '\n');
@@ -102,13 +102,13 @@ function twigBuild() {
 
 
 function scripts() {
-  del([paths.js + '/chunks/**', paths.js + '/vendors/**'], {force: true})
-  return src(paths.js + '/main.js', {allowEmpty: true})
+  del([paths.js + '/chunks/**', paths.js + '/vendors/**'], { force: true })
+  return src(paths.js + '/main.js', { allowEmpty: true })
     .pipe(webpackStream(webpackConfig, webpack)).on('error', function handleError() {
       this.emit('end')
     })
     .pipe(dest(paths.js))
-    .pipe(browserSync.reload({stream: true}))
+    .pipe(browserSync.reload({ stream: true }))
 }
 
 function styles() {
@@ -125,7 +125,7 @@ function styles() {
     .pipe(gcmq())
     .pipe(cleanCSS())
     .pipe(dest(paths.css))
-    .pipe(browserSync.reload({stream: true}))
+    .pipe(browserSync.reload({ stream: true }))
 }
 
 function minChunks() {
@@ -134,25 +134,25 @@ function minChunks() {
     .pipe(cleanCSS())
     .pipe(rename('chunks.min.css'))
     .pipe(dest(paths.css))
-    .pipe(browserSync.reload({stream: true}))
+    .pipe(browserSync.reload({ stream: true }))
 }
 
 function images() {
   return src(paths.images + '/**/*')
     .pipe(imagemin([
-      imagemin.gifsicle({interlaced: true}),
-      imagemin.mozjpeg({quality: 75, progressive: true}),
-      imagemin.optipng({optimizationLevel: 3, interlaced: true}),
+      imagemin.gifsicle({ interlaced: true }),
+      imagemin.mozjpeg({ quality: 75, progressive: true }),
+      imagemin.optipng({ optimizationLevel: 3, interlaced: true }),
     ]))
     .pipe(dest(paths.img))
 }
 
 function cleanimg() {
-  return del(paths.img + '/**/*', {force: true})
+  return del(paths.img + '/**/*', { force: true })
 }
 
 function clearDist() {
-  return del(paths.build, {force: true})
+  return del(paths.build, { force: true })
 }
 
 function createBuild() {
@@ -161,7 +161,7 @@ function createBuild() {
 }
 
 function startwatch() {
-  watch(paths.sass + '/**/*', {usePolling: true}, styles);
+  watch(paths.sass + '/**/*', { usePolling: true }, styles);
   watch(
     [
       paths.js + '/**/*.js',
@@ -171,14 +171,14 @@ function startwatch() {
       '!' + paths.js + '/vendors/**',
       '!' + paths.js + '/chunks/**'
     ],
-    {usePolling: true},
+    { usePolling: true },
     scripts
   )
-  watch(paths.images + '/**/*.{jpg,jpeg,png,webp,svg,gif}', {usePolling: true}, images)
-  watch(paths.css + '/**/chunks.css', {usePolling: true}, minChunks);
+  watch(paths.images + '/**/*.{jpg,jpeg,png,webp,svg,gif}', { usePolling: true }, images)
+  watch(paths.css + '/**/chunks.css', { usePolling: true }, minChunks);
 }
 
-function transferAssets(){
+function transferAssets() {
   return src(paths.src + '/assets/**/*.*')
     .pipe(dest(transferPaths.assets))
 }
@@ -187,4 +187,4 @@ function transferAssets(){
 export let build = series(clearDist, styles, images, twigBuild, createBuild)
 export let prod = series(scripts, minChunks, images, styles, parallel(express))
 export let transfer = series(scripts, minChunks, images, styles, transferAssets)
-export default series(scripts, minChunks, images, styles,express, parallel(startwatch, browsersync))
+export default series(scripts, minChunks, images, styles, express, parallel(startwatch, browsersync))

@@ -73,12 +73,19 @@ h2 {
         margin-bottom: 104px;
     }
     .title {
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        margin-bottom: 24px;
+        line-height: 127%;
         text-align: center;
         margin-top: 0;
         margin-bottom: 24px;
         color: var(--grey);
         text-align: center;
         @media (min-width: 768px) {
+            font-size: 40px;
+            line-height: 120%;
             margin-bottom: 56px;
         }
     }

@@ -41,6 +41,7 @@
         font-weight: 700;
         font-size: 20px;
         line-height: 25px;
+        word-break: break-all;
         transition: all 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
         margin-bottom: 8px;
         @media (min-width: 992px) {
@@ -98,7 +99,7 @@
             left: 16px;
             right: 16px;
             opacity: 0;
-            transition: bottom 0.3s, opacity 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+            transition: all 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
         }
     }
     &:hover {

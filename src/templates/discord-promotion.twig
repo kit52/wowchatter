@@ -2,7 +2,7 @@
 {% block content %}
 <!---->
 {% include '@root/includes/sections/breadcrumbs.twig' %}
-{% include '@root/includes/sections/section-chats.twig' with {
+{% include '@root/includes/discord/section-chats.twig' with {
 cards:chatSection.cards,
 addClass:'section-chats-other'
 } %}
@@ -15,7 +15,7 @@ addClass:'section-chats-other'
 list:listSection
 } %}
 {% include '@root/includes/sections/section-video.twig' %}
-{% include '@root/includes/sections/section-accordion.twig' with {
+{% include '@root/includes/sections/accordion-section-with-btn.twig' with {
 accordions:accordionSection.accordions
 } %}
 <!---->

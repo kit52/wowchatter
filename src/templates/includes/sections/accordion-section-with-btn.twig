@@ -1,0 +1,40 @@
+{% with {class:"section-accordion accordion-section-with-btn"} %}
+<sections class=" {{ class }} section">
+    <div class="container ">
+        <h2 class="title">FAQ</h2>
+        <div class="accordion-container">
+            {% for item in accordions %}
+            <div class="ac ">
+                <h3 class="ac-header">
+                    <button class="ac-trigger">
+                        <span>{{item.title}} </span>
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.05"
+                                d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" />
+                            <path
+                                d="M10.7397 16.7802C10.5497 16.7802 10.3597 16.7102 10.2097 16.5602C9.91969 16.2702 9.91969 15.7902 10.2097 15.5002L13.2097 12.5002L10.2097 9.50016C9.91969 9.21016 9.91969 8.73016 10.2097 8.44016C10.4997 8.15016 10.9797 8.15016 11.2697 8.44016L14.7997 11.9702C15.0897 12.2602 15.0897 12.7402 14.7997 13.0302L11.2697 16.5602C11.1197 16.7102 10.9297 16.7802 10.7397 16.7802Z" />
+                        </svg></button>
+                </h3>
+                <div class="ac-panel">
+                    <div class="ac-content">
+                        {{item.text}}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="btns">
+            {% include '@root/includes/components/btn.twig' with {
+            text:'Support Wowchatter',
+            link:'https://t.me/wowchatter',
+            addClass:'outline-blue-text btn_small',
+            svg:'<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M14.2766 2.478L2.45657 7.036C1.6499 7.36 1.65457 7.81 2.30857 8.01067L5.34323 8.95734L12.3646 4.52734C12.6966 4.32534 12.9999 4.434 12.7506 4.65534L7.0619 9.78934H7.06057L7.0619 9.79L6.85257 12.918C7.15924 12.918 7.29457 12.7773 7.46657 12.6113L8.94057 11.178L12.0066 13.4427C12.5719 13.754 12.9779 13.594 13.1186 12.9193L15.1312 3.434C15.3372 2.608 14.8159 2.234 14.2766 2.478Z" />
+            </svg>
+            '
+            } %}
+        </div>
+    </div>
+</sections>
+{% endwith %}

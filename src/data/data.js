@@ -7,7 +7,12 @@ import {
   socialActivitySection,
   accordionSection,
   telegram,
-  discord
+  discord,
+  twitter,
+  reddit,
+  youtube,
+  instagram,
+  contactUs
 } from "./sections.js"
 const header = { //копоненты хедера
 
@@ -23,7 +28,7 @@ const data = {
       desctop: [
         {
           name: 'Home',
-          link: '#',
+          link: '/',
           submenu: false,
           selected: true
         },
@@ -31,8 +36,8 @@ const data = {
           name: 'Chats activity',
           submenu: true,
           items: [
-            { name: "Telegram promotion", link: '' },
-            { name: "Discord promotion", link: '' }
+            { name: "Telegram promotion", link: '/telegram-promotion' },
+            { name: "Discord promotion", link: '/discord-promotion' }
           ],
           selected: false
         },
@@ -40,16 +45,16 @@ const data = {
           name: 'Social media activity',
           submenu: true,
           items: [
-            { name: "Twitter activity", link: '#' },
-            { name: "Reddit activity", link: '#' },
-            { name: "YouTube activity", link: '#' },
-            { name: "Instagram activity", link: '#' }
+            { name: "Twitter activity", link: '/twitter-activity' },
+            { name: "Reddit activity", link: '/reddit-activity' },
+            { name: "YouTube activity", link: '/youtube-activity' },
+            { name: "Instagram activity", link: '/instagram-activity' }
           ],
           selected: false
         },
         {
           name: 'Contact us',
-          link: '#',
+          link: '/contact-us',
           submenu: false,
           selected: false
         },
@@ -57,28 +62,28 @@ const data = {
       mobile: [
         {
           name: "Home",
-          link: '#'
+          link: '/'
         }, {
           name: "Telegram promotion ",
-          link: '#'
+          link: '/telegram-promotion'
         }, {
           name: "Discord promotion ",
-          link: '#'
+          link: '/discord-promotion'
         }, {
           name: "Twitter activity",
-          link: '#'
+          link: '/twitter-activity'
         }, {
           name: "Reddit activity",
-          link: '#'
+          link: '/reddit-activity'
         }, {
           name: "YouTube activity",
-          link: '#'
+          link: 'youtube-activity'
         }, {
           name: "Instagram activity",
-          link: '#'
+          link: '/instagram-activity'
         }, {
           name: "Contact us",
-          link: '#'
+          link: '/contact-us'
         },
       ]
     },
@@ -94,18 +99,18 @@ const data = {
     title: 'Wowchatter',
     breadcrumbs: [
       {
-        link: '#',
+        link: '/',
         text: 'Home'
       },
       {
-        link: '#',
+
         text: 'Telegram promotion '
       }],
     header: {
       desctop: [
         {
           name: 'Home',
-          link: '#',
+          link: '/',
           submenu: false,
           selected: false
         },
@@ -113,8 +118,8 @@ const data = {
           name: 'Chats activity',
           submenu: true,
           items: [
-            { name: "Telegram promotion", link: '' },
-            { name: "Discord promotion", link: '' }
+            { name: "Telegram promotion", link: '/telegram-promotion' },
+            { name: "Discord promotion", link: '/discord-promotion' }
           ],
           selected: true
         },
@@ -122,16 +127,16 @@ const data = {
           name: 'Social media activity',
           submenu: true,
           items: [
-            { name: "Twitter activity", link: '#' },
-            { name: "Reddit activity", link: '#' },
-            { name: "YouTube activity", link: '#' },
-            { name: "Instagram activity", link: '#' }
+            { name: "Twitter activity", link: '/twitter-activity' },
+            { name: "Reddit activity", link: '/reddit-activity' },
+            { name: "YouTube activity", link: 'youtube-activity' },
+            { name: "Instagram activity", link: '/instagram-activity' }
           ],
           selected: false
         },
         {
           name: 'Contact us',
-          link: '#',
+          link: '/contact-us',
           submenu: false,
           selected: false
         },
@@ -139,28 +144,28 @@ const data = {
       mobile: [
         {
           name: "Home",
-          link: '#'
+          link: '/'
         }, {
           name: "Telegram promotion ",
-          link: '#'
+          link: '/telegram-promotion'
         }, {
           name: "Discord promotion ",
-          link: '#'
+          link: '/discord-promotion'
         }, {
           name: "Twitter activity",
-          link: '#'
+          link: '/twitter-activity'
         }, {
           name: "Reddit activity",
-          link: '#'
+          link: '/reddit-activity'
         }, {
           name: "YouTube activity",
-          link: '#'
+          link: '/youtube-activity'
         }, {
           name: "Instagram activity",
-          link: '#'
+          link: '/instagram-activity'
         }, {
           name: "Contact us",
-          link: '#'
+          link: '/contact-us'
         },
       ]
     },
@@ -171,18 +176,18 @@ const data = {
     title: 'Wowchatter',
     breadcrumbs: [
       {
-        link: '#',
+        link: '/',
         text: 'Home'
       },
       {
-        link: '#',
+
         text: 'Discord promotion '
       }],
     header: {
       desctop: [
         {
           name: 'Home',
-          link: '#',
+          link: '/',
           submenu: false,
           selected: false
         },
@@ -190,8 +195,8 @@ const data = {
           name: 'Chats activity',
           submenu: true,
           items: [
-            { name: "Telegram promotion", link: '' },
-            { name: "Discord promotion", link: '' }
+            { name: "Telegram promotion", link: '/telegram-promotion' },
+            { name: "Discord promotion", link: '/discord-promotion' }
           ],
           selected: true
         },
@@ -199,16 +204,16 @@ const data = {
           name: 'Social media activity',
           submenu: true,
           items: [
-            { name: "Twitter activity", link: '#' },
-            { name: "Reddit activity", link: '#' },
-            { name: "YouTube activity", link: '#' },
-            { name: "Instagram activity", link: '#' }
+            { name: "Twitter activity", link: '/twitter-activity' },
+            { name: "Reddit activity", link: '/reddit-activity' },
+            { name: "YouTube activity", link: '/youtube-activity' },
+            { name: "Instagram activity", link: '/instagram-activity' }
           ],
           selected: false
         },
         {
           name: 'Contact us',
-          link: '#',
+          link: '/contact-us',
           submenu: false,
           selected: false
         },
@@ -216,34 +221,419 @@ const data = {
       mobile: [
         {
           name: "Home",
-          link: '#'
+          link: '/'
         }, {
           name: "Telegram promotion ",
-          link: '#'
+          link: '/telegram-promotion'
         }, {
           name: "Discord promotion ",
-          link: '#'
+          link: '/discord-promotion'
         }, {
           name: "Twitter activity",
-          link: '#'
+          link: '/twitter-activity'
         }, {
           name: "Reddit activity",
-          link: '#'
+          link: '/reddit-activity'
         }, {
           name: "YouTube activity",
-          link: '#'
+          link: '/youtube-activity'
         }, {
           name: "Instagram activity",
-          link: '#'
+          link: '/instagram-activity'
         }, {
           name: "Contact us",
-          link: '#'
+          link: '/contact-us'
         },
       ]
     },
     ...discord
 
-  }
+  },
+
+  "twitter-activity": {
+    title: 'Wowchatter',
+    breadcrumbs: [
+      {
+        link: '/',
+        text: 'Home'
+      },
+      {
+
+        text: 'Twitter activity '
+      }],
+    header: {
+      desctop: [
+        {
+          name: 'Home',
+          link: '/',
+          submenu: false,
+          selected: false
+        },
+        {
+          name: 'Chats activity',
+          submenu: true,
+          items: [
+            { name: "Telegram promotion", link: '/telegram-promotion' },
+            { name: "Discord promotion", link: '/discord-promotion' }
+          ],
+          selected: false
+        },
+        {
+          name: 'Social media activity',
+          submenu: true,
+          items: [
+            { name: "Twitter activity", link: '/twitter-activity' },
+            { name: "Reddit activity", link: '/reddit-activity' },
+            { name: "YouTube activity", link: '/youtube-activity' },
+            { name: "Instagram activity", link: '/instagram-activity' }
+          ],
+          selected: true
+        },
+        {
+          name: 'Contact us',
+          link: '/contact-us',
+          submenu: false,
+          selected: false
+        },
+      ],
+      mobile: [
+        {
+          name: "Home",
+          link: '/'
+        }, {
+          name: "Telegram promotion ",
+          link: '/telegram-promotion'
+        }, {
+          name: "Discord promotion ",
+          link: '/discord-promotion'
+        }, {
+          name: "Twitter activity",
+          link: '/twitter-activity'
+        }, {
+          name: "Reddit activity",
+          link: '/reddit-activity'
+        }, {
+          name: "YouTube activity",
+          link: '/youtube-activity'
+        }, {
+          name: "Instagram activity",
+          link: '/instagram-activity'
+        }, {
+          name: "Contact us",
+          link: '/contact-us'
+        },
+      ]
+    },
+    ...twitter
+
+  },
+  "reddit-activity": {
+    title: 'Wowchatter',
+    breadcrumbs: [
+      {
+        link: '/',
+        text: 'Home'
+      },
+      {
+
+        text: 'Reddit activity '
+      }],
+    header: {
+      desctop: [
+        {
+          name: 'Home',
+          link: '/',
+          submenu: false,
+          selected: false
+        },
+        {
+          name: 'Chats activity',
+          submenu: true,
+          items: [
+            { name: "Telegram promotion", link: '/telegram-promotion' },
+            { name: "Discord promotion", link: '/discord-promotion' }
+          ],
+          selected: false
+        },
+        {
+          name: 'Social media activity',
+          submenu: true,
+          items: [
+            { name: "Twitter activity", link: '/twitter-activity' },
+            { name: "Reddit activity", link: '/reddit-activity' },
+            { name: "YouTube activity", link: '/youtube-activity' },
+            { name: "Instagram activity", link: '/instagram-activity' }
+          ],
+          selected: true
+        },
+        {
+          name: 'Contact us',
+          link: '/contact-us',
+          submenu: false,
+          selected: false
+        },
+      ],
+      mobile: [
+        {
+          name: "Home",
+          link: '/'
+        }, {
+          name: "Telegram promotion ",
+          link: '/telegram-promotion'
+        }, {
+          name: "Discord promotion ",
+          link: '/discord-promotion'
+        }, {
+          name: "Twitter activity",
+          link: '/twitter-activity'
+        }, {
+          name: "Reddit activity",
+          link: '/reddit-activity'
+        }, {
+          name: "YouTube activity",
+          link: '/youtube-activity'
+        }, {
+          name: "Instagram activity",
+          link: '/instagram-activity'
+        }, {
+          name: "Contact us",
+          link: '/contact-us'
+        },
+      ]
+    },
+    ...reddit
+
+  },
+  "youtube-activity": {
+    title: 'Wowchatter',
+    breadcrumbs: [
+      {
+        link: '/',
+        text: 'Home'
+      },
+      {
+
+        text: 'Youtube activity '
+      }],
+    header: {
+      desctop: [
+        {
+          name: 'Home',
+          link: '/',
+          submenu: false,
+          selected: false
+        },
+        {
+          name: 'Chats activity',
+          submenu: true,
+          items: [
+            { name: "Telegram promotion", link: '/telegram-promotion' },
+            { name: "Discord promotion", link: '/discord-promotion' }
+          ],
+          selected: false
+        },
+        {
+          name: 'Social media activity',
+          submenu: true,
+          items: [
+            { name: "Twitter activity", link: '/twitter-activity' },
+            { name: "Reddit activity", link: '/reddit-activity' },
+            { name: "YouTube activity", link: '/youtube-activity' },
+            { name: "Instagram activity", link: '/instagram-activity' }
+          ],
+          selected: true
+        },
+        {
+          name: 'Contact us',
+          link: '/contact-us',
+          submenu: false,
+          selected: false
+        },
+      ],
+      mobile: [
+        {
+          name: "Home",
+          link: '/'
+        }, {
+          name: "Telegram promotion ",
+          link: '/telegram-promotion'
+        }, {
+          name: "Discord promotion ",
+          link: '/discord-promotion'
+        }, {
+          name: "Twitter activity",
+          link: '/twitter-activity'
+        }, {
+          name: "Reddit activity",
+          link: '/reddit-activity'
+        }, {
+          name: "YouTube activity",
+          link: '/youtube-activity'
+        }, {
+          name: "Instagram activity",
+          link: '/instagram-activity'
+        }, {
+          name: "Contact us",
+          link: '/contact-us'
+        },
+      ]
+    },
+    ...youtube
+
+  },
+  "instagram-activity": {
+    title: 'Wowchatter',
+    breadcrumbs: [
+      {
+        link: '/',
+        text: 'Home'
+      },
+      {
+
+        text: 'Instagram activity '
+      }],
+    header: {
+      desctop: [
+        {
+          name: 'Home',
+          link: '/',
+          submenu: false,
+          selected: false
+        },
+        {
+          name: 'Chats activity',
+          submenu: true,
+          items: [
+            { name: "Telegram promotion", link: '/telegram-promotion' },
+            { name: "Discord promotion", link: '/discord-promotion' }
+          ],
+          selected: false
+        },
+        {
+          name: 'Social media activity',
+          submenu: true,
+          items: [
+            { name: "Twitter activity", link: '/twitter-activity' },
+            { name: "Reddit activity", link: '/reddit-activity' },
+            { name: "YouTube activity", link: '/youtube-activity' },
+            { name: "Instagram activity", link: '/instagram-activity' }
+          ],
+          selected: true
+        },
+        {
+          name: 'Contact us',
+          link: '/contact-us',
+          submenu: false,
+          selected: false
+        },
+      ],
+      mobile: [
+        {
+          name: "Home",
+          link: '/'
+        }, {
+          name: "Telegram promotion ",
+          link: '/telegram-promotion'
+        }, {
+          name: "Discord promotion ",
+          link: '/discord-promotion'
+        }, {
+          name: "Twitter activity",
+          link: '/twitter-activity'
+        }, {
+          name: "Reddit activity",
+          link: '/reddit-activity'
+        }, {
+          name: "YouTube activity",
+          link: '/youtube-activity'
+        }, {
+          name: "Instagram activity",
+          link: '/instagram-activity'
+        }, {
+          name: "Contact us",
+          link: '/contact-us'
+        },
+      ]
+    },
+    ...instagram
+
+  },
+  "contact-us": {
+    title: 'Wowchatter',
+    breadcrumbs: [
+      {
+        link: '/',
+        text: 'Home'
+      },
+      {
+        text: 'Contact us '
+      }],
+    header: {
+      desctop: [
+        {
+          name: 'Home',
+          link: '/',
+          submenu: false,
+          selected: false
+        },
+        {
+          name: 'Chats activity',
+          submenu: true,
+          items: [
+            { name: "Telegram promotion", link: '/telegram-promotion' },
+            { name: "Discord promotion", link: '/discord-promotion' }
+          ],
+          selected: false
+        },
+        {
+          name: 'Social media activity',
+          submenu: true,
+          items: [
+            { name: "Twitter activity", link: '/twitter-activity' },
+            { name: "Reddit activity", link: '/reddit-activity' },
+            { name: "YouTube activity", link: '/youtube-activity' },
+            { name: "Instagram activity", link: '/instagram-activity' }
+          ],
+          selected: false
+        },
+        {
+          name: 'Contact us',
+          link: '/contact-us',
+          submenu: false,
+          selected: true
+        },
+      ],
+      mobile: [
+        {
+          name: "Home",
+          link: '/'
+        }, {
+          name: "Telegram promotion ",
+          link: '/telegram-promotion'
+        }, {
+          name: "Discord promotion ",
+          link: '/discord-promotion'
+        }, {
+          name: "Twitter activity",
+          link: '/twitter-activity'
+        }, {
+          name: "Reddit activity",
+          link: '/reddit-activity'
+        }, {
+          name: "YouTube activity",
+          link: '/youtube-activity'
+        }, {
+          name: "Instagram activity",
+          link: '/instagram-activity'
+        }, {
+          name: "Contact us",
+          link: '/contact-us'
+        },
+      ]
+    },
+    contactUs
+
+  },
 }
 
 
