@@ -538,7 +538,7 @@ export const contactUs = {
         title: 'Wowchatter',
         text: "Leave a request in the online form",
         ticket: 'Online form',
-        link: '',
+        link: 'https://docs.google.com/forms/d/e/1FAIpQLSdmp-1vYcbwfMbBHWJWf2El05Zjq6ekgBXnl85tq-egnidAEg/viewform',
         btn: {
             text: 'Online form',
             svg: `<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
