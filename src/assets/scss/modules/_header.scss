@@ -5,14 +5,7 @@
         margin-top: 40px;
         margin-bottom: 0;
     }
-    .current {
-        background-color: var(--blue);
-        color: #ffffff;
-        border-radius: 8px;
-        a {
-            color: #ffffff;
-        }
-    }
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -45,10 +38,8 @@
                 line-height: 16px;
                 text-align: center;
                 margin-bottom: 16px;
-                &:hover {
-                    a {
-                        color: var(--blue);
-                    }
+                &:hover > a {
+                    color: var(--blue);
                 }
             }
         }
@@ -103,7 +94,7 @@
                     color: var(--blue);
                     background: rgba(0, 98, 212, 0.05);
                     border-radius: 8px;
-                    a {
+                    & > a {
                         color: var(--blue);
                     }
                 }
@@ -241,4 +232,12 @@
 .nav.active {
     display: flex;
     visibility: visible;
+}
+.current {
+    background-color: var(--blue);
+    color: #ffffff;
+    border-radius: 8px;
+    & > a {
+        color: #ffffff;
+    }
 }

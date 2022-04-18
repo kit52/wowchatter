@@ -1,4 +1,8 @@
-console.log("f1");
+
+import Accordion from 'accordion-js'
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const burger = document.querySelector('.burger');
@@ -31,11 +35,12 @@ document.addEventListener("DOMContentLoaded", () => {
             })
         })
     }
+    function accordionsInit() {
+        const accordions = [...document.querySelectorAll('.accordion-container')]
+        new Accordion(accordions)
+    }
     const accordion = document.querySelector('.accordion-container')
     if (accordion) {
-        (async function () {
-            const module = await import('./modules/accordion.js')
-            module.default()
-        })()
+        accordionsInit()
     }
 });

@@ -28,7 +28,7 @@ const data = {
       desctop: [
         {
           name: 'Home',
-          link: '/',
+          link: './index.html',
           submenu: false,
           selected: true
         },
@@ -36,8 +36,8 @@ const data = {
           name: 'Chats activity',
           submenu: true,
           items: [
-            { name: "Telegram promotion", link: '/telegram-promotion' },
-            { name: "Discord promotion", link: '/discord-promotion' }
+            { name: "Telegram promotion", link: './telegram-promotion.html' },
+            { name: "Discord promotion", link: './discord-promotion.html' }
           ],
           selected: false
         },
@@ -45,16 +45,16 @@ const data = {
           name: 'Social media activity',
           submenu: true,
           items: [
-            { name: "Twitter activity", link: '/twitter-activity' },
-            { name: "Reddit activity", link: '/reddit-activity' },
-            { name: "YouTube activity", link: '/youtube-activity' },
-            { name: "Instagram activity", link: '/instagram-activity' }
+            { name: "Twitter activity", link: './twitter-activity.html' },
+            { name: "Reddit activity", link: './reddit-activity.html' },
+            { name: "YouTube activity", link: './youtube-activity.html' },
+            { name: "Instagram activity", link: './instagram-activity.html' }
           ],
           selected: false
         },
         {
           name: 'Contact us',
-          link: '/contact-us',
+          link: './contact-us.html',
           submenu: false,
           selected: false
         },
@@ -62,28 +62,28 @@ const data = {
       mobile: [
         {
           name: "Home",
-          link: '/'
+          link: './index.html'
         }, {
           name: "Telegram promotion ",
-          link: '/telegram-promotion'
+          link: './telegram-promotion.html'
         }, {
           name: "Discord promotion ",
-          link: '/discord-promotion'
+          link: './discord-promotion.html'
         }, {
           name: "Twitter activity",
-          link: '/twitter-activity'
+          link: './twitter-activity.html'
         }, {
           name: "Reddit activity",
-          link: '/reddit-activity'
+          link: './reddit-activity.html'
         }, {
           name: "YouTube activity",
-          link: 'youtube-activity'
+          link: './youtube-activity.html'
         }, {
           name: "Instagram activity",
-          link: '/instagram-activity'
+          link: './instagram-activity.html'
         }, {
           name: "Contact us",
-          link: '/contact-us'
+          link: './contact-us.html'
         },
       ]
     },
@@ -99,7 +99,7 @@ const data = {
     title: 'Wowchatter',
     breadcrumbs: [
       {
-        link: '/',
+        link: './index.html',
         text: 'Home'
       },
       {
@@ -110,7 +110,7 @@ const data = {
       desctop: [
         {
           name: 'Home',
-          link: '/',
+          link: './index.html',
           submenu: false,
           selected: false
         },
@@ -118,8 +118,8 @@ const data = {
           name: 'Chats activity',
           submenu: true,
           items: [
-            { name: "Telegram promotion", link: '/telegram-promotion' },
-            { name: "Discord promotion", link: '/discord-promotion' }
+            { name: "Telegram promotion", link: './telegram-promotion.html' },
+            { name: "Discord promotion", link: './discord-promotion.html' }
           ],
           selected: true
         },
@@ -127,16 +127,16 @@ const data = {
           name: 'Social media activity',
           submenu: true,
           items: [
-            { name: "Twitter activity", link: '/twitter-activity' },
-            { name: "Reddit activity", link: '/reddit-activity' },
-            { name: "YouTube activity", link: 'youtube-activity' },
-            { name: "Instagram activity", link: '/instagram-activity' }
+            { name: "Twitter activity", link: './twitter-activity.html' },
+            { name: "Reddit activity", link: './reddit-activity.html' },
+            { name: "YouTube activity", link: './youtube-activity.html' },
+            { name: "Instagram activity", link: './instagram-activity.html' }
           ],
           selected: false
         },
         {
           name: 'Contact us',
-          link: '/contact-us',
+          link: './contact-us.html',
           submenu: false,
           selected: false
         },
@@ -144,28 +144,28 @@ const data = {
       mobile: [
         {
           name: "Home",
-          link: '/'
+          link: './index.html'
         }, {
           name: "Telegram promotion ",
-          link: '/telegram-promotion'
+          link: './telegram-promotion.html'
         }, {
           name: "Discord promotion ",
-          link: '/discord-promotion'
+          link: './discord-promotion.html'
         }, {
           name: "Twitter activity",
-          link: '/twitter-activity'
+          link: './twitter-activity.html'
         }, {
           name: "Reddit activity",
-          link: '/reddit-activity'
+          link: './reddit-activity.html'
         }, {
           name: "YouTube activity",
-          link: '/youtube-activity'
+          link: './youtube-activity.html'
         }, {
           name: "Instagram activity",
-          link: '/instagram-activity'
+          link: './instagram-activity.html'
         }, {
           name: "Contact us",
-          link: '/contact-us'
+          link: './contact-us.html'
         },
       ]
     },
@@ -176,7 +176,7 @@ const data = {
     title: 'Wowchatter',
     breadcrumbs: [
       {
-        link: '/',
+        link: './index.html',
         text: 'Home'
       },
       {
@@ -187,7 +187,7 @@ const data = {
       desctop: [
         {
           name: 'Home',
-          link: '/',
+          link: './index.html',
           submenu: false,
           selected: false
         },
@@ -195,8 +195,8 @@ const data = {
           name: 'Chats activity',
           submenu: true,
           items: [
-            { name: "Telegram promotion", link: '/telegram-promotion' },
-            { name: "Discord promotion", link: '/discord-promotion' }
+            { name: "Telegram promotion", link: './telegram-promotion.html' },
+            { name: "Discord promotion", link: './discord-promotion.html' }
           ],
           selected: true
         },
@@ -204,16 +204,16 @@ const data = {
           name: 'Social media activity',
           submenu: true,
           items: [
-            { name: "Twitter activity", link: '/twitter-activity' },
-            { name: "Reddit activity", link: '/reddit-activity' },
-            { name: "YouTube activity", link: '/youtube-activity' },
-            { name: "Instagram activity", link: '/instagram-activity' }
+            { name: "Twitter activity", link: './twitter-activity.html' },
+            { name: "Reddit activity", link: './reddit-activity.html' },
+            { name: "YouTube activity", link: './youtube-activity.html' },
+            { name: "Instagram activity", link: './instagram-activity.html' }
           ],
           selected: false
         },
         {
           name: 'Contact us',
-          link: '/contact-us',
+          link: './contact-us.html',
           submenu: false,
           selected: false
         },
@@ -221,28 +221,28 @@ const data = {
       mobile: [
         {
           name: "Home",
-          link: '/'
+          link: './index.html'
         }, {
           name: "Telegram promotion ",
-          link: '/telegram-promotion'
+          link: './telegram-promotion.html'
         }, {
           name: "Discord promotion ",
-          link: '/discord-promotion'
+          link: './discord-promotion.html'
         }, {
           name: "Twitter activity",
-          link: '/twitter-activity'
+          link: './twitter-activity.html'
         }, {
           name: "Reddit activity",
-          link: '/reddit-activity'
+          link: './reddit-activity.html'
         }, {
           name: "YouTube activity",
-          link: '/youtube-activity'
+          link: './youtube-activity.html'
         }, {
           name: "Instagram activity",
-          link: '/instagram-activity'
+          link: './instagram-activity.html'
         }, {
           name: "Contact us",
-          link: '/contact-us'
+          link: './contact-us.html'
         },
       ]
     },
@@ -254,7 +254,7 @@ const data = {
     title: 'Wowchatter',
     breadcrumbs: [
       {
-        link: '/',
+        link: './index.html',
         text: 'Home'
       },
       {
@@ -265,7 +265,7 @@ const data = {
       desctop: [
         {
           name: 'Home',
-          link: '/',
+          link: './index.html',
           submenu: false,
           selected: false
         },
@@ -273,8 +273,8 @@ const data = {
           name: 'Chats activity',
           submenu: true,
           items: [
-            { name: "Telegram promotion", link: '/telegram-promotion' },
-            { name: "Discord promotion", link: '/discord-promotion' }
+            { name: "Telegram promotion", link: './telegram-promotion.html' },
+            { name: "Discord promotion", link: './discord-promotion.html' }
           ],
           selected: false
         },
@@ -282,16 +282,16 @@ const data = {
           name: 'Social media activity',
           submenu: true,
           items: [
-            { name: "Twitter activity", link: '/twitter-activity' },
-            { name: "Reddit activity", link: '/reddit-activity' },
-            { name: "YouTube activity", link: '/youtube-activity' },
-            { name: "Instagram activity", link: '/instagram-activity' }
+            { name: "Twitter activity", link: './twitter-activity.html' },
+            { name: "Reddit activity", link: './reddit-activity.html' },
+            { name: "YouTube activity", link: './youtube-activity.html' },
+            { name: "Instagram activity", link: './instagram-activity.html' }
           ],
           selected: true
         },
         {
           name: 'Contact us',
-          link: '/contact-us',
+          link: './contact-us.html',
           submenu: false,
           selected: false
         },
@@ -299,28 +299,28 @@ const data = {
       mobile: [
         {
           name: "Home",
-          link: '/'
+          link: './index.html'
         }, {
           name: "Telegram promotion ",
-          link: '/telegram-promotion'
+          link: './telegram-promotion.html'
         }, {
           name: "Discord promotion ",
-          link: '/discord-promotion'
+          link: './discord-promotion.html'
         }, {
           name: "Twitter activity",
-          link: '/twitter-activity'
+          link: './twitter-activity.html'
         }, {
           name: "Reddit activity",
-          link: '/reddit-activity'
+          link: './reddit-activity.html'
         }, {
           name: "YouTube activity",
-          link: '/youtube-activity'
+          link: './youtube-activity.html'
         }, {
           name: "Instagram activity",
-          link: '/instagram-activity'
+          link: './instagram-activity.html'
         }, {
           name: "Contact us",
-          link: '/contact-us'
+          link: './contact-us.html'
         },
       ]
     },
@@ -331,7 +331,7 @@ const data = {
     title: 'Wowchatter',
     breadcrumbs: [
       {
-        link: '/',
+        link: './index.html',
         text: 'Home'
       },
       {
@@ -342,7 +342,7 @@ const data = {
       desctop: [
         {
           name: 'Home',
-          link: '/',
+          link: './index.html',
           submenu: false,
           selected: false
         },
@@ -350,8 +350,8 @@ const data = {
           name: 'Chats activity',
           submenu: true,
           items: [
-            { name: "Telegram promotion", link: '/telegram-promotion' },
-            { name: "Discord promotion", link: '/discord-promotion' }
+            { name: "Telegram promotion", link: './telegram-promotion.html' },
+            { name: "Discord promotion", link: './discord-promotion.html' }
           ],
           selected: false
         },
@@ -359,16 +359,16 @@ const data = {
           name: 'Social media activity',
           submenu: true,
           items: [
-            { name: "Twitter activity", link: '/twitter-activity' },
-            { name: "Reddit activity", link: '/reddit-activity' },
-            { name: "YouTube activity", link: '/youtube-activity' },
-            { name: "Instagram activity", link: '/instagram-activity' }
+            { name: "Twitter activity", link: './twitter-activity.html' },
+            { name: "Reddit activity", link: './reddit-activity.html' },
+            { name: "YouTube activity", link: './youtube-activity.html' },
+            { name: "Instagram activity", link: './instagram-activity.html' }
           ],
           selected: true
         },
         {
           name: 'Contact us',
-          link: '/contact-us',
+          link: './contact-us.html',
           submenu: false,
           selected: false
         },
@@ -376,28 +376,28 @@ const data = {
       mobile: [
         {
           name: "Home",
-          link: '/'
+          link: './index.html'
         }, {
           name: "Telegram promotion ",
-          link: '/telegram-promotion'
+          link: './telegram-promotion.html'
         }, {
           name: "Discord promotion ",
-          link: '/discord-promotion'
+          link: './discord-promotion.html'
         }, {
           name: "Twitter activity",
-          link: '/twitter-activity'
+          link: './twitter-activity.html'
         }, {
           name: "Reddit activity",
-          link: '/reddit-activity'
+          link: './reddit-activity.html'
         }, {
           name: "YouTube activity",
-          link: '/youtube-activity'
+          link: './youtube-activity.html'
         }, {
           name: "Instagram activity",
-          link: '/instagram-activity'
+          link: './instagram-activity.html'
         }, {
           name: "Contact us",
-          link: '/contact-us'
+          link: './contact-us.html'
         },
       ]
     },
@@ -408,7 +408,7 @@ const data = {
     title: 'Wowchatter',
     breadcrumbs: [
       {
-        link: '/',
+        link: './index.html',
         text: 'Home'
       },
       {
@@ -419,7 +419,7 @@ const data = {
       desctop: [
         {
           name: 'Home',
-          link: '/',
+          link: './index.html',
           submenu: false,
           selected: false
         },
@@ -427,8 +427,8 @@ const data = {
           name: 'Chats activity',
           submenu: true,
           items: [
-            { name: "Telegram promotion", link: '/telegram-promotion' },
-            { name: "Discord promotion", link: '/discord-promotion' }
+            { name: "Telegram promotion", link: './telegram-promotion.html' },
+            { name: "Discord promotion", link: './discord-promotion.html' }
           ],
           selected: false
         },
@@ -436,16 +436,16 @@ const data = {
           name: 'Social media activity',
           submenu: true,
           items: [
-            { name: "Twitter activity", link: '/twitter-activity' },
-            { name: "Reddit activity", link: '/reddit-activity' },
-            { name: "YouTube activity", link: '/youtube-activity' },
-            { name: "Instagram activity", link: '/instagram-activity' }
+            { name: "Twitter activity", link: './twitter-activity.html' },
+            { name: "Reddit activity", link: './reddit-activity.html' },
+            { name: "YouTube activity", link: './youtube-activity.html' },
+            { name: "Instagram activity", link: './instagram-activity.html' }
           ],
           selected: true
         },
         {
           name: 'Contact us',
-          link: '/contact-us',
+          link: './contact-us.html',
           submenu: false,
           selected: false
         },
@@ -453,28 +453,28 @@ const data = {
       mobile: [
         {
           name: "Home",
-          link: '/'
+          link: './index.html'
         }, {
           name: "Telegram promotion ",
-          link: '/telegram-promotion'
+          link: './telegram-promotion.html'
         }, {
           name: "Discord promotion ",
-          link: '/discord-promotion'
+          link: './discord-promotion.html'
         }, {
           name: "Twitter activity",
-          link: '/twitter-activity'
+          link: './twitter-activity.html'
         }, {
           name: "Reddit activity",
-          link: '/reddit-activity'
+          link: './reddit-activity.html'
         }, {
           name: "YouTube activity",
-          link: '/youtube-activity'
+          link: './youtube-activity.html'
         }, {
           name: "Instagram activity",
-          link: '/instagram-activity'
+          link: './instagram-activity.html'
         }, {
           name: "Contact us",
-          link: '/contact-us'
+          link: './contact-us.html'
         },
       ]
     },
@@ -485,7 +485,7 @@ const data = {
     title: 'Wowchatter',
     breadcrumbs: [
       {
-        link: '/',
+        link: './index.html',
         text: 'Home'
       },
       {
@@ -496,7 +496,7 @@ const data = {
       desctop: [
         {
           name: 'Home',
-          link: '/',
+          link: './index.html',
           submenu: false,
           selected: false
         },
@@ -504,8 +504,8 @@ const data = {
           name: 'Chats activity',
           submenu: true,
           items: [
-            { name: "Telegram promotion", link: '/telegram-promotion' },
-            { name: "Discord promotion", link: '/discord-promotion' }
+            { name: "Telegram promotion", link: './telegram-promotion.html' },
+            { name: "Discord promotion", link: './discord-promotion.html' }
           ],
           selected: false
         },
@@ -513,16 +513,16 @@ const data = {
           name: 'Social media activity',
           submenu: true,
           items: [
-            { name: "Twitter activity", link: '/twitter-activity' },
-            { name: "Reddit activity", link: '/reddit-activity' },
-            { name: "YouTube activity", link: '/youtube-activity' },
-            { name: "Instagram activity", link: '/instagram-activity' }
+            { name: "Twitter activity", link: './twitter-activity.html' },
+            { name: "Reddit activity", link: './reddit-activity.html' },
+            { name: "YouTube activity", link: './youtube-activity.html' },
+            { name: "Instagram activity", link: './instagram-activity.html' }
           ],
           selected: true
         },
         {
           name: 'Contact us',
-          link: '/contact-us',
+          link: './contact-us.html',
           submenu: false,
           selected: false
         },
@@ -530,28 +530,28 @@ const data = {
       mobile: [
         {
           name: "Home",
-          link: '/'
+          link: './index.html'
         }, {
           name: "Telegram promotion ",
-          link: '/telegram-promotion'
+          link: './telegram-promotion.html'
         }, {
           name: "Discord promotion ",
-          link: '/discord-promotion'
+          link: './discord-promotion.html'
         }, {
           name: "Twitter activity",
-          link: '/twitter-activity'
+          link: './twitter-activity.html'
         }, {
           name: "Reddit activity",
-          link: '/reddit-activity'
+          link: './reddit-activity.html'
         }, {
           name: "YouTube activity",
-          link: '/youtube-activity'
+          link: './youtube-activity.html'
         }, {
           name: "Instagram activity",
-          link: '/instagram-activity'
+          link: './instagram-activity.html'
         }, {
           name: "Contact us",
-          link: '/contact-us'
+          link: './contact-us.html'
         },
       ]
     },
@@ -562,7 +562,7 @@ const data = {
     title: 'Wowchatter',
     breadcrumbs: [
       {
-        link: '/',
+        link: './index.html',
         text: 'Home'
       },
       {
@@ -572,7 +572,7 @@ const data = {
       desctop: [
         {
           name: 'Home',
-          link: '/',
+          link: './index.html',
           submenu: false,
           selected: false
         },
@@ -580,8 +580,8 @@ const data = {
           name: 'Chats activity',
           submenu: true,
           items: [
-            { name: "Telegram promotion", link: '/telegram-promotion' },
-            { name: "Discord promotion", link: '/discord-promotion' }
+            { name: "Telegram promotion", link: './telegram-promotion.html' },
+            { name: "Discord promotion", link: './discord-promotion.html' }
           ],
           selected: false
         },
@@ -589,16 +589,16 @@ const data = {
           name: 'Social media activity',
           submenu: true,
           items: [
-            { name: "Twitter activity", link: '/twitter-activity' },
-            { name: "Reddit activity", link: '/reddit-activity' },
-            { name: "YouTube activity", link: '/youtube-activity' },
-            { name: "Instagram activity", link: '/instagram-activity' }
+            { name: "Twitter activity", link: './twitter-activity.html' },
+            { name: "Reddit activity", link: './reddit-activity.html' },
+            { name: "YouTube activity", link: './youtube-activity.html' },
+            { name: "Instagram activity", link: './instagram-activity.html' }
           ],
           selected: false
         },
         {
           name: 'Contact us',
-          link: '/contact-us',
+          link: './contact-us.html',
           submenu: false,
           selected: true
         },
@@ -606,28 +606,28 @@ const data = {
       mobile: [
         {
           name: "Home",
-          link: '/'
+          link: './index.html'
         }, {
           name: "Telegram promotion ",
-          link: '/telegram-promotion'
+          link: './telegram-promotion.html'
         }, {
           name: "Discord promotion ",
-          link: '/discord-promotion'
+          link: './discord-promotion.html'
         }, {
           name: "Twitter activity",
-          link: '/twitter-activity'
+          link: './twitter-activity.html'
         }, {
           name: "Reddit activity",
-          link: '/reddit-activity'
+          link: './reddit-activity.html'
         }, {
           name: "YouTube activity",
-          link: '/youtube-activity'
+          link: './youtube-activity.html'
         }, {
           name: "Instagram activity",
-          link: '/instagram-activity'
+          link: './instagram-activity.html'
         }, {
           name: "Contact us",
-          link: '/contact-us'
+          link: './contact-us.html'
         },
       ]
     },

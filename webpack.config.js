@@ -69,7 +69,6 @@ const config = {
       }
     ],
     splitChunks: {
-      chunks: 'all',
       maxInitialRequests: Infinity,
       minSize: 0,
       cacheGroups: {
