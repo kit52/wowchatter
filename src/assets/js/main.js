@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-mobile')
     const body = document.querySelector('body')
-    console.log("f");
+
     burger.addEventListener('click', () => {
         burger.classList.toggle('active')
         nav.classList.toggle('active')
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             body.classList.toggle('lock')
         }
     })
-    console.log(document.querySelector('.video'));
+
     if (document.querySelector('.video')) {
 
         const videos = document.querySelectorAll('.video');
