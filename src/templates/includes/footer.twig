@@ -3,7 +3,7 @@
     <div class="container">
         {% include '@root/includes/components/promo.twig' %}
         <div class="{{c}}__three-collumn">
-            <div class="{{c}}__three-collumn-item item">
+            {# <div class="{{c}}__three-collumn-item item">
                 <div class="item__title">
                     <p class="item__title_small">Telegram bot </p>
                     <p class="item__title_big">@wowchatter_bot</p>
@@ -18,7 +18,7 @@
                 text:'Telegram bot',
                 link:'#'
                 } %}
-            </div>
+            </div> #}
             <div class="{{c}}__three-collumn-item item">
                 <div class="item__title">
                     <p class="item__title_small">Online form</p>
@@ -38,7 +38,7 @@
             <div class="{{c}}__three-collumn-item item">
                 <div class="item__title">
                     <p class="item__title_small">Manager </p>
-                    <p class="item__title_big">@wowchatter</p>
+                    <p class="item__title_big">@wowchatter_manager</p>
                 </div>
                 {% include '@root/includes/components/btn.twig' with {
                 svg:'<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,8 +47,8 @@
                 </svg>
                 ',
                 addClass:'outline-white',
-                text:'Telegram bot',
-                link:'Start chat'
+                text:'Start chat',
+                link:'https://t.me/wowchatter_manager'
                 } %}
             </div>
         </div>

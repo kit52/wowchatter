@@ -53,12 +53,16 @@
         flex-direction: column;
         align-items: center;
         @media (min-width: 768px) {
-            justify-content: space-between;
+            justify-content: space-around;
             margin-bottom: 48px;
             align-items: unset;
             flex-direction: unset;
         }
         .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
             &:not(:last-child) {
                 margin-bottom: 28px;
             }
