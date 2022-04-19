@@ -199,10 +199,11 @@ export const accordionSection = {
             title: 'Is it safe to buy live activity for my chats?',
             text: `Our tested crypto marketing tactics and results-driven approach make the process safe and transparent, and help you watch your blockchain community growing live! All payments occur on the blockchain, thus making your transactions transparent.`,
         },
+        // {
+        //     title: 'What payment methods are available?',
+        //     text: `What payment methods are available?`,
+        // },
         {
-            title: 'What payment methods are available?',
-            text: `What payment methods are available?`,
-        }, {
             title: 'How is activity created on my media projects?',
             text: `A team of specialists deeply involved in your blockchain / nft / gamefi / defi runs live chats activities in your telegram, discord and any other chats of your project using live users accounts. We are a real crypto loyal community that meets new potential customers, answers all the questions asked, accompanies members of your community before whitelist, handles hateful and negative comments, moderates chats, and all this happens live 24/7! Just choose the right service option for your project and buy a REAL blockchain loyal community.`,
         }, {
@@ -278,10 +279,11 @@ export const telegram = {
                 title: 'Is it safe to buy live activity for my chats?',
                 text: `Our tested crypto marketing tactics and results-driven approach make the process safe and transparent, and help you watch your blockchain community growing live! All payments occur on the blockchain, thus making your transactions transparent.`,
             },
+            // {
+            //     title: 'What payment methods are available?',
+            //     text: `What payment methods are available?`,
+            // },
             {
-                title: 'What payment methods are available?',
-                text: `What payment methods are available?`,
-            }, {
                 title: 'How is activity created on my media projects?',
                 text: `A team of specialists deeply involved in your blockchain / nft / gamefi / defi runs live chats activities in your telegram, discord and any other chats of your project using live users accounts. We are a real crypto loyal community that meets new potential customers, answers all the questions asked, accompanies members of your community before whitelist, handles hateful and negative comments, moderates chats, and all this happens live 24/7! Just choose the right service option for your project and buy a REAL blockchain loyal community.`,
             }, {
@@ -358,10 +360,11 @@ export const discord = {
                 title: 'Is it safe to buy live activity for my chats?',
                 text: `Our tested crypto marketing tactics and results-driven approach make the process safe and transparent, and help you watch your blockchain community growing live! All payments occur on the blockchain, thus making your transactions transparent.`,
             },
+            // {
+            //     title: 'What payment methods are available?',
+            //     text: `What payment methods are available?`,
+            // },
             {
-                title: 'What payment methods are available?',
-                text: `What payment methods are available?`,
-            }, {
                 title: 'How is activity created on my media projects?',
                 text: `A team of specialists deeply involved in your blockchain / nft / gamefi / defi runs live chats activities in your telegram, discord and any other chats of your project using live users accounts. We are a real crypto loyal community that meets new potential customers, answers all the questions asked, accompanies members of your community before whitelist, handles hateful and negative comments, moderates chats, and all this happens live 24/7! Just choose the right service option for your project and buy a REAL blockchain loyal community.`,
             }, {
@@ -394,10 +397,11 @@ export const twitter = {
                 title: 'Is it safe to buy live activity for my chats?',
                 text: `Our tested crypto marketing tactics and results-driven approach make the process safe and transparent, and help you watch your blockchain community growing live! All payments occur on the blockchain, thus making your transactions transparent.`,
             },
+            // {
+            //     title: 'What payment methods are available?',
+            //     text: `What payment methods are available?`,
+            // },
             {
-                title: 'What payment methods are available?',
-                text: `What payment methods are available?`,
-            }, {
                 title: 'How is activity created on my media projects?',
                 text: `A team of specialists deeply involved in your blockchain / nft / gamefi / defi runs live chats activities in your telegram, discord and any other chats of your project using live users accounts. We are a real crypto loyal community that meets new potential customers, answers all the questions asked, accompanies members of your community before whitelist, handles hateful and negative comments, moderates chats, and all this happens live 24/7! Just choose the right service option for your project and buy a REAL blockchain loyal community.`,
             }, {
@@ -429,10 +433,11 @@ export const reddit = {
                 title: 'Is it safe to buy live activity for my chats?',
                 text: `Our tested crypto marketing tactics and results-driven approach make the process safe and transparent, and help you watch your blockchain community growing live! All payments occur on the blockchain, thus making your transactions transparent.`,
             },
+            // {
+            //     title: 'What payment methods are available?',
+            //     text: `What payment methods are available?`,
+            // },
             {
-                title: 'What payment methods are available?',
-                text: `What payment methods are available?`,
-            }, {
                 title: 'How is activity created on my media projects?',
                 text: `A team of specialists deeply involved in your blockchain / nft / gamefi / defi runs live chats activities in your telegram, discord and any other chats of your project using live users accounts. We are a real crypto loyal community that meets new potential customers, answers all the questions asked, accompanies members of your community before whitelist, handles hateful and negative comments, moderates chats, and all this happens live 24/7! Just choose the right service option for your project and buy a REAL blockchain loyal community.`,
             }, {
@@ -466,10 +471,11 @@ export const youtube = {
                 title: 'Is it safe to buy live activity for my chats?',
                 text: `Our tested crypto marketing tactics and results-driven approach make the process safe and transparent, and help you watch your blockchain community growing live! All payments occur on the blockchain, thus making your transactions transparent.`,
             },
+            // {
+            //     title: 'What payment methods are available?',
+            //     text: `What payment methods are available?`,
+            // },
             {
-                title: 'What payment methods are available?',
-                text: `What payment methods are available?`,
-            }, {
                 title: 'How is activity created on my media projects?',
                 text: `A team of specialists deeply involved in your blockchain / nft / gamefi / defi runs live chats activities in your telegram, discord and any other chats of your project using live users accounts. We are a real crypto loyal community that meets new potential customers, answers all the questions asked, accompanies members of your community before whitelist, handles hateful and negative comments, moderates chats, and all this happens live 24/7! Just choose the right service option for your project and buy a REAL blockchain loyal community.`,
             }, {
@@ -503,10 +509,11 @@ export const instagram = {
                 title: 'Is it safe to buy live activity for my chats?',
                 text: `Our tested crypto marketing tactics and results-driven approach make the process safe and transparent, and help you watch your blockchain community growing live! All payments occur on the blockchain, thus making your transactions transparent.`,
             },
+            // {
+            //     title: 'What payment methods are available?',
+            //     text: `What payment methods are available?`,
+            // },
             {
-                title: 'What payment methods are available?',
-                text: `What payment methods are available?`,
-            }, {
                 title: 'How is activity created on my media projects?',
                 text: `A team of specialists deeply involved in your blockchain / nft / gamefi / defi runs live chats activities in your telegram, discord and any other chats of your project using live users accounts. We are a real crypto loyal community that meets new potential customers, answers all the questions asked, accompanies members of your community before whitelist, handles hateful and negative comments, moderates chats, and all this happens live 24/7! Just choose the right service option for your project and buy a REAL blockchain loyal community.`,
             }, {
@@ -519,29 +526,30 @@ export const instagram = {
 export const contactUs = {
     title: 'Contact us',
     text: 'Whatever your task - we will be happy to work with you',
-    cards: [{
-        title: '@wowchatter_bot',
-        text: "Connect services via Telegram-bot",
-        ticket: 'Telegram bot ',
-        link: '',
-        btn: {
-            text: 'Start telegram bot',
-            svg: `<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.2771 0.47788L1.45706 5.03588C0.650389 5.35988 0.655055 5.80988 1.30906 6.01055L4.34372 
-            6.95721L11.3651 2.52721C11.6971 2.32521 12.0004 2.43388 11.7511 2.65521L6.06239 7.78922H6.06106L6.06239 
-            7.78988L5.85306 10.9179C6.15972 10.9179 6.29506 10.7772 6.46706 10.6112L7.94106 9.17788L11.0071 11.4425C11.5724 
-            11.7539 11.9784 11.5939 12.1191 10.9192L14.1317 1.43388C14.3377 0.60788 13.8164 0.23388 13.2771 0.47788Z"/>
-            </svg>`
-        }
-    },
-    {
-        title: 'Wowchatter',
-        text: "Leave a request in the online form",
-        ticket: 'Online form',
-        link: 'https://docs.google.com/forms/d/e/1FAIpQLSdmp-1vYcbwfMbBHWJWf2El05Zjq6ekgBXnl85tq-egnidAEg/viewform',
-        btn: {
-            text: 'Online form',
-            svg: `<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    cards: [
+        //     {
+        //     title: '@wowchatter_bot',
+        //     text: "Connect services via Telegram-bot",
+        //     ticket: 'Telegram bot ',
+        //     link: '',
+        //     btn: {
+        //         text: 'Start telegram bot',
+        //         svg: `<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        //         <path d="M13.2771 0.47788L1.45706 5.03588C0.650389 5.35988 0.655055 5.80988 1.30906 6.01055L4.34372 
+        //         6.95721L11.3651 2.52721C11.6971 2.32521 12.0004 2.43388 11.7511 2.65521L6.06239 7.78922H6.06106L6.06239 
+        //         7.78988L5.85306 10.9179C6.15972 10.9179 6.29506 10.7772 6.46706 10.6112L7.94106 9.17788L11.0071 11.4425C11.5724 
+        //         11.7539 11.9784 11.5939 12.1191 10.9192L14.1317 1.43388C14.3377 0.60788 13.8164 0.23388 13.2771 0.47788Z"/>
+        //         </svg>`
+        //     }
+        // },
+        {
+            title: 'Wowchatter',
+            text: "Leave a request in the online form",
+            ticket: 'Online form',
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSdmp-1vYcbwfMbBHWJWf2El05Zjq6ekgBXnl85tq-egnidAEg/viewform',
+            btn: {
+                text: 'Online form',
+                svg: `<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity="0.4" d="M14.166 6.79325H12.2393C10.6593 6.79325 9.37268 5.50659 9.37268 3.92659V1.99992C9.37268 1.63325 9.07268 1.33325 8.70602 1.33325H5.87935C3.82602 1.33325 2.16602 2.66659 2.16602 5.04659V10.9533C2.16602 13.3333 3.82602 14.6666 5.87935 14.6666H11.1193C13.1727 14.6666 14.8327 13.3333 14.8327 10.9533V7.45992C14.8327 7.09325 14.5327 6.79325 14.166 6.79325Z"fill-opacity="0.05"/>
             <path d="M11.0338 1.47341C10.7604 1.20008 10.2871 1.38674 10.2871 1.76674V4.09341C10.2871 5.06674 11.1138 5.87341 12.1204 5.87341C12.7538 5.88008 13.6338 5.88008 14.3871 5.88008C14.7671 5.88008 14.9671 5.43341 14.7004 5.16674C13.7404 4.20008 12.0204 2.46008 11.0338 1.47341Z"/>
             <path d="M9.5 9.16675H5.5C5.22667 9.16675 5 8.94008 5 8.66675C5 8.39341 5.22667 8.16675 5.5 8.16675H9.5C9.77333 8.16675 10 8.39341 10 8.66675C10 8.94008 9.77333 9.16675 9.5 9.16675Z" />
@@ -549,22 +557,22 @@ export const contactUs = {
             </svg>
             
             `
-        }
-    },
-    {
-        title: '@wowchatter',
-        text: "Write to our manager in Telegram",
-        ticket: 'Wowchatter Manager',
-        link: '',
-        btn: {
-            text: 'Start manager chat',
-            svg: `<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            }
+        },
+        {
+            title: '@wowchatter',
+            text: "Write to our manager in Telegram",
+            ticket: 'Wowchatter Manager',
+            link: '',
+            btn: {
+                text: 'Start manager chat',
+                svg: `<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.2771 0.47788L1.45706 5.03588C0.650389 5.35988 0.655055 5.80988 1.30906 6.01055L4.34372 
             6.95721L11.3651 2.52721C11.6971 2.32521 12.0004 2.43388 11.7511 2.65521L6.06239 7.78922H6.06106L6.06239 
             7.78988L5.85306 10.9179C6.15972 10.9179 6.29506 10.7772 6.46706 10.6112L7.94106 9.17788L11.0071 11.4425C11.5724 
             11.7539 11.9784 11.5939 12.1191 10.9192L14.1317 1.43388C14.3377 0.60788 13.8164 0.23388 13.2771 0.47788Z"/>
             </svg>`
+            }
         }
-    }
     ]
 }
