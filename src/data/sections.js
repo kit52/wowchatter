@@ -414,7 +414,7 @@ export const twitter = {
 export const reddit = {
     chatSection: {
         card: {
-            title: '100 comments on Twitter',
+            title: '100 comments on Reddit',
             text: "Real comments on your posts",
             price: '$ 40',
             ticket: '1 account'
@@ -450,7 +450,7 @@ export const reddit = {
 export const youtube = {
     chatSection: {
         card: {
-            title: '100 comments on Twitter',
+            title: '100 comments on Youtube',
             text: "Real comments on your posts",
             price: '$ 40',
             ticket: '1 account'
@@ -488,7 +488,7 @@ export const youtube = {
 export const instagram = {
     chatSection: {
         card: {
-            title: '100 comments on Twitter',
+            title: '100 comments on Instagram',
             text: "Real comments on your posts",
             price: '$ 40',
             ticket: '1 account'
@@ -560,10 +560,10 @@ export const contactUs = {
             }
         },
         {
-            title: '@wowchatter',
+            title: '@wowchatter_manager',
             text: "Write to our manager in Telegram",
             ticket: 'Wowchatter Manager',
-            link: 'https://docs.google.com/forms/d/e/1FAIpQLSdmp-1vYcbwfMbBHWJWf2El05Zjq6ekgBXnl85tq-egnidAEg/viewform',
+            link: 'https://t.me/wowchatter_manager',
             btn: {
                 text: 'Start manager chat',
                 svg: `<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
