@@ -414,7 +414,7 @@ export const twitter = {
 export const reddit = {
     chatSection: {
         card: {
-            title: '100 comments on Twitter',
+            title: '100 comments on Reddit',
             text: "Real comments on your posts",
             price: '$ 40',
             ticket: '1 account'
@@ -450,7 +450,7 @@ export const reddit = {
 export const youtube = {
     chatSection: {
         card: {
-            title: '100 comments on Twitter',
+            title: '100 comments on Youtube',
             text: "Real comments on your posts",
             price: '$ 40',
             ticket: '1 account'
@@ -488,7 +488,7 @@ export const youtube = {
 export const instagram = {
     chatSection: {
         card: {
-            title: '100 comments on Twitter',
+            title: '100 comments on Instagram',
             text: "Real comments on your posts",
             price: '$ 40',
             ticket: '1 account'
