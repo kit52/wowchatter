@@ -9,6 +9,10 @@
     .container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        @media (min-width: 992px) {
+            align-items: unset;
+        }
     }
     &__menu {
         display: none;

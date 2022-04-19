@@ -563,7 +563,7 @@ export const contactUs = {
             title: '@wowchatter',
             text: "Write to our manager in Telegram",
             ticket: 'Wowchatter Manager',
-            link: '',
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSdmp-1vYcbwfMbBHWJWf2El05Zjq6ekgBXnl85tq-egnidAEg/viewform',
             btn: {
                 text: 'Start manager chat',
                 svg: `<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">

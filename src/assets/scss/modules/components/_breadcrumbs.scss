@@ -18,13 +18,12 @@
         position: relative;
         padding: 0 6px;
         margin-top: 5px;
-        a {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            color: var(--grey-op);
-        }
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--grey-op);
+
         &.bold {
             a {
                 color: var(--grey);
